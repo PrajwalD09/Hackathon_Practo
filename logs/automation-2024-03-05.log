@@ -1,0 +1,65 @@
+11:08:50.419 [main] INFO  factory.BaseClass - running through chrome
+11:08:50.469 [main] INFO  factory.BaseClass - deleting all the cookies
+11:08:50.486 [main] INFO  factory.BaseClass - applying the implicit wait
+11:08:55.137 [main] INFO  factory.BaseClass - *********** search Test started **********
+11:08:55.138 [main] INFO  factory.BaseClass - entering the search data
+11:08:56.093 [main] INFO  factory.BaseClass - navigating to the doctors page
+11:08:56.097 [main] INFO  factory.BaseClass - search Test got passed
+11:08:56.563 [main] INFO  factory.BaseClass - *********** filter Test started **********
+11:08:56.563 [main] INFO  factory.BaseClass - applying the filters
+11:13:56.001 [main] INFO  factory.BaseClass - running through chrome
+11:13:56.047 [main] INFO  factory.BaseClass - deleting all the cookies
+11:13:56.060 [main] INFO  factory.BaseClass - applying the implicit wait
+11:13:59.284 [main] INFO  factory.BaseClass - *********** search Test started **********
+11:13:59.285 [main] INFO  factory.BaseClass - entering the search data
+11:14:00.297 [main] INFO  factory.BaseClass - navigating to the doctors page
+11:14:00.879 [main] INFO  factory.BaseClass - search Test got passed
+11:14:00.886 [main] INFO  factory.BaseClass - *********** filter Test started **********
+11:14:00.886 [main] INFO  factory.BaseClass - applying the filters
+11:14:16.146 [main] INFO  factory.BaseClass - applied all the filters
+11:14:16.395 [main] INFO  factory.BaseClass - filter Test got passed
+11:14:16.397 [main] INFO  factory.BaseClass - *********** getDoctorsData Test started **********
+11:14:16.397 [main] INFO  factory.BaseClass - getting the doctors details
+11:14:17.927 [main] INFO  factory.BaseClass - printing the details in the excel
+11:14:18.208 [main] INFO  factory.BaseClass - getDoctorsData Test got passed
+11:14:18.210 [main] INFO  factory.BaseClass - *********** navigateToSurgeries Test started **********
+11:14:18.211 [main] INFO  factory.BaseClass - navigating to the surgeries page
+11:14:19.906 [main] INFO  factory.BaseClass - navigateToSurgeries Test got passed
+11:14:19.908 [main] INFO  factory.BaseClass - *********** getSurgeriesList Test started **********
+11:14:19.909 [main] INFO  factory.BaseClass - scrolling down to the surgeries
+11:14:23.186 [main] INFO  factory.BaseClass - printing the surgeries list in the excel
+11:19:36.379 [main] INFO  factory.BaseClass - running through chrome
+11:19:36.407 [main] INFO  factory.BaseClass - deleting all the cookies
+11:19:36.418 [main] INFO  factory.BaseClass - applying the implicit wait
+11:19:40.421 [main] INFO  factory.BaseClass - entering the search data
+11:19:41.350 [main] INFO  factory.BaseClass - navigating to the doctors page
+11:19:41.747 [main] INFO  factory.BaseClass - applying the filters
+11:28:27.237 [main] INFO  factory.BaseClass - running through chrome
+11:28:27.282 [main] INFO  factory.BaseClass - deleting all the cookies
+11:28:27.307 [main] INFO  factory.BaseClass - applying the implicit wait
+11:28:31.088 [main] INFO  factory.BaseClass - *********** search Test started **********
+11:28:31.089 [main] INFO  factory.BaseClass - entering the search data
+11:28:32.791 [main] INFO  factory.BaseClass - navigating to the doctors page
+11:28:33.477 [main] INFO  factory.BaseClass - search Test got passed
+11:28:33.490 [main] INFO  factory.BaseClass - *********** filter Test started **********
+11:28:33.490 [main] INFO  factory.BaseClass - applying the filters
+11:30:47.623 [main] INFO  factory.BaseClass - running through chrome
+11:30:47.688 [main] INFO  factory.BaseClass - deleting all the cookies
+11:30:47.708 [main] INFO  factory.BaseClass - applying the implicit wait
+11:36:16.497 [main] INFO  factory.BaseClass - deleting all the cookies
+11:36:16.534 [main] INFO  factory.BaseClass - applying the implicit wait
+20:28:14.305 [main] INFO  factory.BaseClass - running through chrome
+20:28:14.352 [main] INFO  factory.BaseClass - deleting all the cookies
+20:28:14.371 [main] INFO  factory.BaseClass - applying the implicit wait
+20:28:19.016 [main] INFO  factory.BaseClass - entering the search data
+20:28:20.077 [main] INFO  factory.BaseClass - navigating to the doctors page
+20:28:20.720 [main] INFO  factory.BaseClass - applying the filters
+20:28:39.089 [main] INFO  factory.BaseClass - applied all the filters
+20:28:39.594 [main] INFO  factory.BaseClass - getting the doctors details
+20:28:42.023 [main] INFO  factory.BaseClass - printing the details in the excel
+20:28:42.492 [main] INFO  factory.BaseClass - navigating to the surgeries page
+20:28:44.974 [main] INFO  factory.BaseClass - scrolling down to the surgeries
+20:28:49.242 [main] INFO  factory.BaseClass - printing the surgeries list in the excel
+20:28:49.879 [main] INFO  factory.BaseClass - navigating to the corporate
+20:28:49.879 [main] INFO  factory.BaseClass - selecting heath and wellness
+20:28:53.908 [main] INFO  factory.BaseClass - entering name and organisation in the demo form

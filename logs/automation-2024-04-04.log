@@ -1,0 +1,68 @@
+17:39:23.656 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+17:39:43.727 [main] INFO  factory.BaseClass - getting the success message
+17:39:43.841 [main] INFO  factory.BaseClass - verifying the success message
+21:37:12.353 [main] INFO  factory.BaseClass - running through chrome
+21:37:12.404 [main] INFO  factory.BaseClass - deleting all the cookies
+21:37:12.423 [main] INFO  factory.BaseClass - applying the implicit wait
+21:37:55.496 [main] INFO  factory.BaseClass - running through chrome
+21:37:55.528 [main] INFO  factory.BaseClass - deleting all the cookies
+21:37:55.540 [main] INFO  factory.BaseClass - applying the implicit wait
+21:38:14.064 [main] INFO  factory.BaseClass - running through chrome
+21:38:14.093 [main] INFO  factory.BaseClass - deleting all the cookies
+21:38:14.105 [main] INFO  factory.BaseClass - applying the implicit wait
+22:14:43.533 [main] INFO  factory.BaseClass - running through chrome
+22:14:43.571 [main] INFO  factory.BaseClass - deleting all the cookies
+22:14:43.582 [main] INFO  factory.BaseClass - applying the implicit wait
+22:15:05.994 [main] INFO  factory.BaseClass - running through chrome
+22:15:06.032 [main] INFO  factory.BaseClass - deleting all the cookies
+22:15:06.045 [main] INFO  factory.BaseClass - applying the implicit wait
+22:16:38.938 [main] INFO  factory.BaseClass - running through chrome
+22:16:38.974 [main] INFO  factory.BaseClass - deleting all the cookies
+22:16:38.984 [main] INFO  factory.BaseClass - applying the implicit wait
+22:17:55.585 [main] INFO  factory.BaseClass - running through chrome
+22:17:55.613 [main] INFO  factory.BaseClass - deleting all the cookies
+22:17:55.623 [main] INFO  factory.BaseClass - applying the implicit wait
+22:19:19.364 [main] INFO  factory.BaseClass - running through chrome
+22:19:19.390 [main] INFO  factory.BaseClass - deleting all the cookies
+22:19:19.402 [main] INFO  factory.BaseClass - applying the implicit wait
+22:46:34.770 [main] INFO  factory.BaseClass - running through chrome
+22:46:34.795 [main] INFO  factory.BaseClass - deleting all the cookies
+22:46:34.805 [main] INFO  factory.BaseClass - applying the implicit wait
+22:48:57.056 [main] INFO  factory.BaseClass - running through chrome
+22:48:57.095 [main] INFO  factory.BaseClass - deleting all the cookies
+22:48:57.104 [main] INFO  factory.BaseClass - applying the implicit wait
+22:49:03.045 [main] INFO  factory.BaseClass - entering the search data
+22:49:17.318 [main] INFO  factory.BaseClass - navigating to the doctors page
+22:49:17.599 [main] INFO  factory.BaseClass - applying the filters
+22:49:48.844 [main] INFO  factory.BaseClass - applied all the filters
+22:49:49.139 [main] INFO  factory.BaseClass - getting the doctors details
+22:49:50.581 [main] INFO  factory.BaseClass - printing the details in the excel
+22:51:26.967 [main] INFO  factory.BaseClass - running through chrome
+22:51:26.996 [main] INFO  factory.BaseClass - deleting all the cookies
+22:51:27.007 [main] INFO  factory.BaseClass - applying the implicit wait
+22:51:27.474 [main] INFO  factory.BaseClass - navigating to the surgeries page
+22:52:10.347 [main] INFO  factory.BaseClass - running through chrome
+22:52:10.383 [main] INFO  factory.BaseClass - deleting all the cookies
+22:52:10.400 [main] INFO  factory.BaseClass - applying the implicit wait
+22:52:11.022 [main] INFO  factory.BaseClass - navigating to the surgeries page
+22:52:22.044 [main] INFO  factory.BaseClass - running through chrome
+22:52:22.092 [main] INFO  factory.BaseClass - deleting all the cookies
+22:52:22.111 [main] INFO  factory.BaseClass - applying the implicit wait
+22:52:22.972 [main] INFO  factory.BaseClass - navigating to the surgeries page
+22:52:35.147 [main] INFO  factory.BaseClass - entering the search data
+22:53:02.953 [main] INFO  factory.BaseClass - navigating to the doctors page
+22:53:03.732 [main] INFO  factory.BaseClass - applying the filters
+22:53:43.262 [main] INFO  factory.BaseClass - applied all the filters
+22:53:43.609 [main] INFO  factory.BaseClass - getting the doctors details
+22:53:45.393 [main] INFO  factory.BaseClass - printing the details in the excel
+22:53:45.873 [main] INFO  factory.BaseClass - navigating to the corporate
+22:53:46.176 [main] INFO  factory.BaseClass - selecting heath and wellness
+22:53:56.262 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+22:54:20.342 [main] INFO  factory.BaseClass - running through chrome
+22:54:20.380 [main] INFO  factory.BaseClass - deleting all the cookies
+22:54:20.393 [main] INFO  factory.BaseClass - applying the implicit wait
+22:54:21.017 [main] INFO  factory.BaseClass - navigating to the surgeries page
+22:54:46.849 [main] INFO  factory.BaseClass - entering the search data
+22:55:10.712 [main] INFO  factory.BaseClass - navigating to the corporate
+22:55:11.048 [main] INFO  factory.BaseClass - selecting heath and wellness
+22:55:16.630 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
