@@ -14,8 +14,8 @@ import org.testng.asserts.SoftAssert;
 
 import POM_files.Doctors;
 import POM_files.HomePage;
-import POM_files.demo;
-import POM_files.surgeries;
+import POM_files.Demo;
+import POM_files.Surgeries;
 import Utilities.ExcelUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,9 +29,9 @@ public class TakingDemo {
 	HomePage homePOM;
 	SoftAssert sa;
 	Doctors doctorsPOM;
-	surgeries surgeriesPOM;
+	Surgeries surgeriesPOM;
 	JavascriptExecutor js;
-	demo demoPOM;
+	Demo demoPOM;
 	
 //	@Given("navigate to practo")
 //	public void navigate_to_practo() {
@@ -49,11 +49,11 @@ public class TakingDemo {
 	@When("clicked on for Corporates")
 	public void clicked_on_for_corporates() {
 	    // Write code here that turns the phrase above into concrete actions
-		driver = hooks.getDriver();
+		driver = Hooks.getDriver();
 		js = (JavascriptExecutor)driver;
-		surgeriesPOM = new surgeries(driver);
-		demoPOM = new demo(driver);
-		logger = hooks.getLogger();
+		surgeriesPOM = new Surgeries(driver);
+		demoPOM = new Demo(driver);
+		logger = Hooks.getLogger();
 		surgeriesPOM.scrollTop(js);
 		surgeriesPOM.corporate();
 		logger.info("navigating to the corporate");

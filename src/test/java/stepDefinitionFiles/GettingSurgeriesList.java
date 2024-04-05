@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 
 import POM_files.Doctors;
 import POM_files.HomePage;
-import POM_files.surgeries;
+import POM_files.Surgeries;
 import Utilities.ExcelUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -25,7 +25,7 @@ public class GettingSurgeriesList {
 	HomePage homePOM;
 	SoftAssert sa;
 	Doctors doctorsPOM;
-	surgeries surgeriesPOM;
+	Surgeries surgeriesPOM;
 	JavascriptExecutor js;
 
 //	@Given("navigate to practo")
@@ -44,8 +44,8 @@ public class GettingSurgeriesList {
 	@When("surgeries is clicked")
 	public void surgeries_is_clicked() {
 	    // Write code here that turns the phrase above into concrete actions
-		driver = hooks.getDriver();
-		logger = hooks.getLogger();
+		driver = Hooks.getDriver();
+		logger = Hooks.getLogger();
 		doctorsPOM = new Doctors(driver);
 		logger.info("navigating to the surgeries page");
 		
@@ -56,7 +56,7 @@ public class GettingSurgeriesList {
 	@Then("the surgeries list should be shown and list has to be retrieved")
 	public void the_surgeries_list_should_be_shown_and_list_has_to_be_retrieved() throws IOException, InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
-		surgeriesPOM = new surgeries(driver);
+		surgeriesPOM = new Surgeries(driver);
 		logger.info("scrolling down to the surgeries");
 		js = (JavascriptExecutor)driver;
 		surgeriesPOM.scrollDown(js);

@@ -9,10 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-import POM_files.demo;
+import POM_files.Demo;
 import POM_files.Doctors;
 import POM_files.HomePage;
-import POM_files.surgeries;
+import POM_files.Surgeries;
 import Utilities.ExcelUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -25,16 +25,16 @@ public class FindingHospitalsStepDef {
 	Logger logger;
 	HomePage homePOM;
 	Doctors doctorsPOM;
-	surgeries surgeriesPOM;
-	demo demoPOM;
+	Surgeries surgeriesPOM;
+	Demo demoPOM;
 	SoftAssert sa;
 	JavascriptExecutor js;
 	
 	@Given("navigate to practo")
 	public void navigate_to_practo() throws InterruptedException {
-		driver = hooks.getDriver();
-		properties = hooks.getProperties();
-		logger = hooks.getLogger();
+		driver = Hooks.getDriver();
+		properties = Hooks.getProperties();
+		logger = Hooks.getLogger();
 		
 		driver.get("https://www.practo.com/");
 		driver.manage().window().maximize();
