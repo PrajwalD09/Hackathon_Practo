@@ -56,6 +56,10 @@ public class ExcelUtils {
 	
 	public static String getData(int r, int c ) throws IOException {
 		
+		//extra wb null
+		file = new FileInputStream(System.getProperty("user.dir") + "//testFiles//TestData.xlsx");
+		wb = new XSSFWorkbook(file);
+		
 		XSSFSheet sheet = wb.getSheet("Demo");
 		XSSFCell cell = sheet.getRow(r).getCell(c);
 		DataFormatter formatter = new DataFormatter();

@@ -174,11 +174,14 @@ public class Doctors extends BasePage {
 	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
 	
 	public boolean surgeriesClick() {
-		if(surgeriesElement.isDisplayed()) {
-			surgeriesElement.click();
-			return true;
-		}
-		return false;
+//		if(surgeriesElement.isDisplayed()) {
+//			surgeriesElement.click();
+//			return true;
+//		}
+//		return false;
+		
+		surgeriesElement.click();
+		return true;
 	}
 	//------------------------------------------------------------------------------
 	
