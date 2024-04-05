@@ -1,144 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-02T18:08:42 IST" name="Suite" finished-at="2024-04-02T18:10:21 IST" duration-ms="98604">
+  <suite started-at="2024-04-05T23:46:16 IST" name="Suite" finished-at="2024-04-05T23:46:16 IST" duration-ms="373">
     <groups>
-      <group name="regressionTest">
-        <method signature="TC_04_findingHospitals.verifyingPhoneFieldUsingInvalidMobileNumberFormat()[pri:7, instance:testClasses.TC_04_findingHospitals@4201c465]" name="verifyingPhoneFieldUsingInvalidMobileNumberFormat" class="testClasses.TC_04_findingHospitals"/>
-        <method signature="TC_04_findingHospitals.verifyingPhoneFieldUsingBVA()[pri:8, instance:testClasses.TC_04_findingHospitals@4201c465]" name="verifyingPhoneFieldUsingBVA" class="testClasses.TC_04_findingHospitals"/>
-        <method signature="TC_04_findingHospitals.verifyingPhoneFieldUsingBVA_1()[pri:9, instance:testClasses.TC_04_findingHospitals@4201c465]" name="verifyingPhoneFieldUsingBVA_1" class="testClasses.TC_04_findingHospitals"/>
-        <method signature="TC_05_findingHospitals.verifyingMobileNumUsingValidInput()[pri:10, instance:testClasses.TC_05_findingHospitals@5b799640]" name="verifyingMobileNumUsingValidInput" class="testClasses.TC_05_findingHospitals"/>
-        <method signature="TC_05_findingHospitals.verifyingMobileNumUsingValidInput_1()[pri:11, instance:testClasses.TC_05_findingHospitals@5b799640]" name="verifyingMobileNumUsingValidInput_1" class="testClasses.TC_05_findingHospitals"/>
-        <method signature="TC_05_findingHospitals.verifyingMobileNumUsingValidInput_2()[pri:12, instance:testClasses.TC_05_findingHospitals@5b799640]" name="verifyingMobileNumUsingValidInput_2" class="testClasses.TC_05_findingHospitals"/>
-        <method signature="TC_05_findingHospitals.verifyingMobileNumUsingValidInput_3()[pri:13, instance:testClasses.TC_05_findingHospitals@5b799640]" name="verifyingMobileNumUsingValidInput_3" class="testClasses.TC_05_findingHospitals"/>
-        <method signature="TC_06_findingHospitals.verifyingEmailUsingInvalidInput()[pri:14, instance:testClasses.TC_06_findingHospitals@6cb107fd]" name="verifyingEmailUsingInvalidInput" class="testClasses.TC_06_findingHospitals"/>
-        <method signature="TC_06_findingHospitals.verifyingEmailUsingInvalidInput_1()[pri:15, instance:testClasses.TC_06_findingHospitals@6cb107fd]" name="verifyingEmailUsingInvalidInput_1" class="testClasses.TC_06_findingHospitals"/>
-        <method signature="TC_06_findingHospitals.verifyingEmailUsingInvalidInput_2()[pri:16, instance:testClasses.TC_06_findingHospitals@6cb107fd]" name="verifyingEmailUsingInvalidInput_2" class="testClasses.TC_06_findingHospitals"/>
-        <method signature="TC_06_findingHospitals.verifyingEmailUsingInvalidInput_3()[pri:17, instance:testClasses.TC_06_findingHospitals@6cb107fd]" name="verifyingEmailUsingInvalidInput_3" class="testClasses.TC_06_findingHospitals"/>
-        <method signature="TC_06_findingHospitals.verifyingEmailUsingValidInput()[pri:18, instance:testClasses.TC_06_findingHospitals@6cb107fd]" name="verifyingEmailUsingValidInput" class="testClasses.TC_06_findingHospitals"/>
-        <method signature="TC_07_findingHospitals.verifyScheduleADemoButtonVisibility()[pri:20, instance:testClasses.TC_07_findingHospitals@710636b0]" name="verifyScheduleADemoButtonVisibility" class="testClasses.TC_07_findingHospitals"/>
-      </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="TC_01_findingHospitals.search()[pri:0, instance:testClasses.TC_01_findingHospitals@6b695b06]" name="search" class="testClasses.TC_01_findingHospitals"/>
-        <method signature="TC_01_findingHospitals.filter()[pri:1, instance:testClasses.TC_01_findingHospitals@6b695b06]" name="filter" class="testClasses.TC_01_findingHospitals"/>
-        <method signature="TC_01_findingHospitals.getDoctorsData()[pri:2, instance:testClasses.TC_01_findingHospitals@6b695b06]" name="getDoctorsData" class="testClasses.TC_01_findingHospitals"/>
-        <method signature="TC_02_findingHospitals.navigateToSurgeries()[pri:3, instance:testClasses.TC_02_findingHospitals@5965d37]" name="navigateToSurgeries" class="testClasses.TC_02_findingHospitals"/>
-        <method signature="TC_02_findingHospitals.getSurgeriesList()[pri:4, instance:testClasses.TC_02_findingHospitals@5965d37]" name="getSurgeriesList" class="testClasses.TC_02_findingHospitals"/>
-        <method signature="TC_03_findingHospitals.navigateToCorporate()[pri:5, instance:testClasses.TC_03_findingHospitals@7a5ceedd]" name="navigateToCorporate" class="testClasses.TC_03_findingHospitals"/>
-        <method signature="TC_03_findingHospitals.navigateToDemo()[pri:6, instance:testClasses.TC_03_findingHospitals@7a5ceedd]" name="navigateToDemo" class="testClasses.TC_03_findingHospitals"/>
-      </group> <!-- smokeTest -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerFile.TestRunner@15888343]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-02T18:08:42 IST" name="Test" finished-at="2024-04-02T18:10:21 IST" duration-ms="98604">
-      <class name="testClasses.TC_06_findingHospitals">
-        <test-method signature="verifyingEmailUsingInvalidInput()[pri:14, instance:testClasses.TC_06_findingHospitals@6cb107fd]" started-at="2024-04-02T18:09:35 IST" name="verifyingEmailUsingInvalidInput" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:35 IST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingEmailUsingInvalidInput -->
-        <test-method signature="verifyingEmailUsingInvalidInput_1()[pri:15, instance:testClasses.TC_06_findingHospitals@6cb107fd]" started-at="2024-04-02T18:09:35 IST" name="verifyingEmailUsingInvalidInput_1" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:35 IST" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingEmailUsingInvalidInput_1 -->
-        <test-method signature="verifyingEmailUsingInvalidInput_2()[pri:16, instance:testClasses.TC_06_findingHospitals@6cb107fd]" started-at="2024-04-02T18:09:36 IST" name="verifyingEmailUsingInvalidInput_2" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:36 IST" duration-ms="300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingEmailUsingInvalidInput_2 -->
-        <test-method signature="verifyingEmailUsingInvalidInput_3()[pri:17, instance:testClasses.TC_06_findingHospitals@6cb107fd]" started-at="2024-04-02T18:09:37 IST" name="verifyingEmailUsingInvalidInput_3" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:37 IST" duration-ms="278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingEmailUsingInvalidInput_3 -->
-        <test-method signature="verifyingEmailUsingValidInput()[pri:18, instance:testClasses.TC_06_findingHospitals@6cb107fd]" started-at="2024-04-02T18:09:37 IST" name="verifyingEmailUsingValidInput" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:38 IST" duration-ms="315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingEmailUsingValidInput -->
-      </class> <!-- testClasses.TC_06_findingHospitals -->
-      <class name="testClasses.TC_01_findingHospitals">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testClasses.TC_01_findingHospitals@6b695b06]" started-at="2024-04-02T18:08:44 IST" name="setUp" finished-at="2024-04-02T18:08:59 IST" duration-ms="14709" status="PASS">
+    <test started-at="2024-04-05T23:46:16 IST" name="Test" finished-at="2024-04-05T23:46:16 IST" duration-ms="373">
+      <class name="runnerFile.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerFile.TestRunner@15888343]" started-at="2024-04-05T23:46:16 IST" name="setUpClass" finished-at="2024-04-05T23:46:16 IST" duration-ms="319" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user_input]]>
+                <![CDATA[org.testng.TestRunner@1f6c9cd8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="search()[pri:0, instance:testClasses.TC_01_findingHospitals@6b695b06]" started-at="2024-04-02T18:08:59 IST" name="search" finished-at="2024-04-02T18:09:00 IST" duration-ms="1143" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerFile.TestRunner@15888343]" started-at="2024-04-05T23:46:16 IST" name="tearDownClass" finished-at="2024-04-05T23:46:16 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method signature="filter()[pri:1, instance:testClasses.TC_01_findingHospitals@6b695b06]" started-at="2024-04-02T18:09:00 IST" name="filter" finished-at="2024-04-02T18:09:18 IST" duration-ms="17324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filter -->
-        <test-method signature="getDoctorsData()[pri:2, instance:testClasses.TC_01_findingHospitals@6b695b06]" started-at="2024-04-02T18:09:18 IST" name="getDoctorsData" finished-at="2024-04-02T18:09:19 IST" duration-ms="1243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getDoctorsData -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testClasses.TC_01_findingHospitals@6b695b06]" started-at="2024-04-02T18:09:59 IST" name="afterClass" finished-at="2024-04-02T18:10:21 IST" duration-ms="21645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- testClasses.TC_01_findingHospitals -->
-      <class name="testClasses.TC_05_findingHospitals">
-        <test-method signature="verifyingMobileNumUsingValidInput()[pri:10, instance:testClasses.TC_05_findingHospitals@5b799640]" started-at="2024-04-02T18:09:32 IST" name="verifyingMobileNumUsingValidInput" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:32 IST" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingMobileNumUsingValidInput -->
-        <test-method signature="verifyingMobileNumUsingValidInput_1()[pri:11, instance:testClasses.TC_05_findingHospitals@5b799640]" started-at="2024-04-02T18:09:33 IST" name="verifyingMobileNumUsingValidInput_1" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:33 IST" duration-ms="174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingMobileNumUsingValidInput_1 -->
-        <test-method signature="verifyingMobileNumUsingValidInput_2()[pri:12, instance:testClasses.TC_05_findingHospitals@5b799640]" started-at="2024-04-02T18:09:33 IST" name="verifyingMobileNumUsingValidInput_2" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:34 IST" duration-ms="176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingMobileNumUsingValidInput_2 -->
-        <test-method signature="verifyingMobileNumUsingValidInput_3()[pri:13, instance:testClasses.TC_05_findingHospitals@5b799640]" started-at="2024-04-02T18:09:34 IST" name="verifyingMobileNumUsingValidInput_3" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:34 IST" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingMobileNumUsingValidInput_3 -->
-      </class> <!-- testClasses.TC_05_findingHospitals -->
-      <class name="testClasses.TC_07_findingHospitals">
-        <test-method signature="verifyScheduleADemoButtonVisibility()[pri:20, instance:testClasses.TC_07_findingHospitals@710636b0]" started-at="2024-04-02T18:09:38 IST" name="verifyScheduleADemoButtonVisibility" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:59 IST" duration-ms="20654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyScheduleADemoButtonVisibility -->
-      </class> <!-- testClasses.TC_07_findingHospitals -->
-      <class name="testClasses.TC_04_findingHospitals">
-        <test-method signature="verifyingPhoneFieldUsingInvalidMobileNumberFormat()[pri:7, instance:testClasses.TC_04_findingHospitals@4201c465]" started-at="2024-04-02T18:09:30 IST" name="verifyingPhoneFieldUsingInvalidMobileNumberFormat" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:30 IST" duration-ms="460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingPhoneFieldUsingInvalidMobileNumberFormat -->
-        <test-method signature="verifyingPhoneFieldUsingBVA()[pri:8, instance:testClasses.TC_04_findingHospitals@4201c465]" started-at="2024-04-02T18:09:31 IST" name="verifyingPhoneFieldUsingBVA" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:31 IST" duration-ms="261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingPhoneFieldUsingBVA -->
-        <test-method signature="verifyingPhoneFieldUsingBVA_1()[pri:9, instance:testClasses.TC_04_findingHospitals@4201c465]" started-at="2024-04-02T18:09:32 IST" name="verifyingPhoneFieldUsingBVA_1" depends-on-groups="smokeTest" finished-at="2024-04-02T18:09:32 IST" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyingPhoneFieldUsingBVA_1 -->
-      </class> <!-- testClasses.TC_04_findingHospitals -->
-      <class name="testClasses.TC_03_findingHospitals">
-        <test-method signature="navigateToCorporate()[pri:5, instance:testClasses.TC_03_findingHospitals@7a5ceedd]" started-at="2024-04-02T18:09:24 IST" name="navigateToCorporate" finished-at="2024-04-02T18:09:25 IST" duration-ms="192" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToCorporate -->
-        <test-method signature="navigateToDemo()[pri:6, instance:testClasses.TC_03_findingHospitals@7a5ceedd]" started-at="2024-04-02T18:09:25 IST" name="navigateToDemo" finished-at="2024-04-02T18:09:30 IST" duration-ms="4452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToDemo -->
-      </class> <!-- testClasses.TC_03_findingHospitals -->
-      <class name="testClasses.TC_02_findingHospitals">
-        <test-method signature="navigateToSurgeries()[pri:3, instance:testClasses.TC_02_findingHospitals@5965d37]" started-at="2024-04-02T18:09:19 IST" name="navigateToSurgeries" finished-at="2024-04-02T18:09:21 IST" duration-ms="1368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToSurgeries -->
-        <test-method signature="getSurgeriesList()[pri:4, instance:testClasses.TC_02_findingHospitals@5965d37]" started-at="2024-04-02T18:09:21 IST" name="getSurgeriesList" finished-at="2024-04-02T18:09:24 IST" duration-ms="2835" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSurgeriesList -->
-      </class> <!-- testClasses.TC_02_findingHospitals -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerFile.TestRunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
