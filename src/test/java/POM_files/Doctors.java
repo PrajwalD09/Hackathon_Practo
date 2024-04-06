@@ -4,14 +4,18 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Doctors extends BasePage {
 	
+	JavascriptExecutor js;
+	
 	public Doctors(WebDriver driver) {
 		super(driver);
+		js = (JavascriptExecutor)driver;
 	}
 	
 	//-------------------------------------------------------------------------------------------
@@ -183,7 +187,8 @@ public class Doctors extends BasePage {
 		
 //		TimeUnit.SECONDS.sleep(4);
 		Thread.sleep(4);
-		surgeriesElement.click();
+//		surgeriesElement.click();
+		js.executeScript("arguments[0].click()", surgeriesElement);
 		
 	}
 	//------------------------------------------------------------------------------

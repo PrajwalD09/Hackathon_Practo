@@ -16,3 +16,40 @@
 10:44:20.673 [main] INFO  factory.BaseClass - navigating to the corporate
 10:44:20.762 [main] INFO  factory.BaseClass - selecting heath and wellness
 10:44:22.048 [main] INFO  factory.BaseClass - verifying with the valid inputs
+10:50:32.063 [main] INFO  factory.BaseClass - running through chrome
+10:50:32.100 [main] INFO  factory.BaseClass - deleting all the cookies
+10:50:32.116 [main] INFO  factory.BaseClass - applying the implicit wait
+10:50:38.463 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:50:38.625 [main] INFO  factory.BaseClass - Entering the search data
+10:50:59.726 [main] INFO  factory.BaseClass - navigating to the doctors page
+10:50:59.825 [main] INFO  factory.BaseClass - applying the filters
+10:51:59.201 [main] INFO  factory.BaseClass - applied all the filters
+10:51:59.281 [main] INFO  factory.BaseClass - getting the doctors details
+10:52:00.744 [main] INFO  factory.BaseClass - printing the details in the excel
+10:52:04.956 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:52:05.043 [main] INFO  factory.BaseClass - navigating to the surgeries page
+10:52:29.043 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:52:29.242 [main] INFO  factory.BaseClass - navigating to the corporate
+10:52:29.324 [main] INFO  factory.BaseClass - selecting heath and wellness
+10:52:33.410 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+10:52:58.102 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:52:58.257 [main] INFO  factory.BaseClass - navigating to the corporate
+10:52:58.361 [main] INFO  factory.BaseClass - selecting heath and wellness
+10:53:00.163 [main] INFO  factory.BaseClass - verifying with the valid inputs
+10:55:36.484 [main] INFO  factory.BaseClass - running through chrome
+10:55:36.509 [main] INFO  factory.BaseClass - deleting all the cookies
+10:55:36.519 [main] INFO  factory.BaseClass - applying the implicit wait
+10:55:42.259 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:55:42.470 [main] INFO  factory.BaseClass - Entering the search data
+10:56:02.750 [main] INFO  factory.BaseClass - navigating to the doctors page
+10:56:02.929 [main] INFO  factory.BaseClass - applying the filters
+10:57:30.121 [main] INFO  factory.BaseClass - applied all the filters
+10:57:30.323 [main] INFO  factory.BaseClass - getting the doctors details
+10:57:31.165 [main] INFO  factory.BaseClass - printing the details in the excel
+10:57:35.486 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:57:35.633 [main] INFO  factory.BaseClass - navigating to the surgeries page
+10:57:37.073 [main] INFO  factory.BaseClass - scrolling down to the surgeries
+10:57:40.382 [main] INFO  factory.BaseClass - printing the surgeries list in the excel
+10:57:47.644 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:57:47.848 [main] INFO  factory.BaseClass - navigating to the corporate
+10:57:47.992 [main] INFO  factory.BaseClass - selecting heath and wellness
