@@ -51,8 +51,9 @@ public class GettingSurgeriesList {
 		
 //		boolean flag = doctorsPOM.surgeriesClick();
 //		Assert.assertTrue(flag);
+		js = (JavascriptExecutor)driver;
 		
-		doctorsPOM.surgeriesClick();
+		doctorsPOM.surgeriesClick(js);
 		Assert.assertTrue(true);
 	}
 

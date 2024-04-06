@@ -14,7 +14,7 @@ public class Demo extends BasePage {
 	
 	public Demo(WebDriver driver) {
 		super(driver);
-		js = (JavascriptExecutor)driver;
+//		js = (JavascriptExecutor)driver;
 	}
 	
 	@FindBy(xpath = "(//input)[1]") WebElement nameElement;
@@ -22,28 +22,28 @@ public class Demo extends BasePage {
 	@FindBy(xpath = "(//input)[3]") WebElement phnElement;
 	@FindBy(xpath = "(//input)[4]") WebElement mailElement;
 	
-	public void name(String name) {
+	public void name(String name,  JavascriptExecutor js) {
 //		nameElement.sendKeys(name);
 		js.executeScript("arguments[0].setAttribute('value', '" + name +"')", nameElement);
 	}
 	
-	public void org(String org) {
+	public void org(String org, JavascriptExecutor js) {
 //		orgElement.sendKeys(org);
 		js.executeScript("arguments[0].setAttribute('value', '" + org +"')", orgElement);
 	}
 	
-	public String phn(String phn) {
+	public String phn(String phn, JavascriptExecutor js) {
 		phnElement.clear();
-		phnElement.sendKeys(phn);
-//		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
+//		phnElement.sendKeys(phn);
+		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
 		
 		return phnElement.getCssValue("color");
 	}
 	
-	public String mail(String mail) {
+	public String mail(String mail, JavascriptExecutor js) {
 		mailElement.clear();
-		mailElement.sendKeys(mail);
-//		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
+//		mailElement.sendKeys(mail);
+		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
 		
 		return mailElement.getCssValue("color");
 	}
@@ -69,9 +69,9 @@ public class Demo extends BasePage {
 	}
 	
 	
-	public void scheduleADemoClick() {
-		scheduleADemoElement.click();
-//		js.executeScript("arguments[0].click()", scheduleADemoElement);
+	public void scheduleADemoClick(JavascriptExecutor js) {
+//		scheduleADemoElement.click();
+		js.executeScript("arguments[0].click()", scheduleADemoElement);
 	}
 	
 	@FindBy(xpath = "(//div[@class='text-center']/div)[1]") WebElement thankYouElement;
