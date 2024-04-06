@@ -1,60 +1,18 @@
-00:46:52.162 [main] INFO  factory.BaseClass - navigating to the corporate
-00:46:52.382 [main] INFO  factory.BaseClass - selecting heath and wellness
-00:46:54.558 [main] INFO  factory.BaseClass - verifying with the valid inputs
-10:25:14.805 [main] INFO  factory.BaseClass - running through chrome
-10:25:14.830 [main] INFO  factory.BaseClass - deleting all the cookies
-10:25:14.840 [main] INFO  factory.BaseClass - applying the implicit wait
-10:25:20.244 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:25:20.379 [main] INFO  factory.BaseClass - Entering the search data
-10:25:41.073 [main] INFO  factory.BaseClass - navigating to the doctors page
-10:25:41.163 [main] INFO  factory.BaseClass - applying the filters
-10:26:10.296 [main] INFO  factory.BaseClass - applied all the filters
-10:26:10.391 [main] INFO  factory.BaseClass - getting the doctors details
-10:26:11.567 [main] INFO  factory.BaseClass - printing the details in the excel
-10:26:15.651 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:26:15.746 [main] INFO  factory.BaseClass - navigating to the surgeries page
-10:26:39.483 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:26:39.634 [main] INFO  factory.BaseClass - navigating to the corporate
-10:26:39.710 [main] INFO  factory.BaseClass - selecting heath and wellness
-10:26:43.666 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
-10:27:08.525 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:27:08.897 [main] INFO  factory.BaseClass - navigating to the corporate
-10:27:09.075 [main] INFO  factory.BaseClass - selecting heath and wellness
-10:27:12.693 [main] INFO  factory.BaseClass - verifying with the valid inputs
-10:30:33.523 [main] INFO  factory.BaseClass - running through chrome
-10:30:33.547 [main] INFO  factory.BaseClass - deleting all the cookies
-10:30:33.558 [main] INFO  factory.BaseClass - applying the implicit wait
-10:30:39.532 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:30:39.734 [main] INFO  factory.BaseClass - Entering the search data
-10:31:00.761 [main] INFO  factory.BaseClass - navigating to the doctors page
-10:31:01.019 [main] INFO  factory.BaseClass - applying the filters
-10:31:29.852 [main] INFO  factory.BaseClass - applied all the filters
-10:31:30.016 [main] INFO  factory.BaseClass - getting the doctors details
-10:31:30.875 [main] INFO  factory.BaseClass - printing the details in the excel
-10:31:34.865 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:31:35.007 [main] INFO  factory.BaseClass - navigating to the surgeries page
-10:31:40.721 [main] INFO  factory.BaseClass - scrolling down to the surgeries
-10:31:43.495 [main] INFO  factory.BaseClass - printing the surgeries list in the excel
-10:31:50.378 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:31:50.565 [main] INFO  factory.BaseClass - navigating to the corporate
-10:31:50.711 [main] INFO  factory.BaseClass - selecting heath and wellness
-10:31:55.107 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
-10:32:00.512 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-10:32:10.819 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-10:32:10.819 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
-10:32:16.010 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 2
-10:32:21.210 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 3
-10:32:52.208 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
-10:32:56.910 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-10:32:57.125 [main] INFO  factory.BaseClass - navigating to the corporate
-10:32:57.254 [main] INFO  factory.BaseClass - selecting heath and wellness
-10:33:00.147 [main] INFO  factory.BaseClass - verifying with the valid inputs
-10:33:05.443 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-10:33:15.630 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-10:33:15.631 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
-10:33:20.796 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
-10:33:25.987 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
-10:33:31.167 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
-10:33:41.713 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
-10:34:01.808 [main] INFO  factory.BaseClass - getting the success message
-10:34:01.960 [main] INFO  factory.BaseClass - verifying the success message
+10:42:21.978 [main] INFO  factory.BaseClass - applying the implicit wait
+10:42:27.586 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:42:27.722 [main] INFO  factory.BaseClass - Entering the search data
+10:42:48.419 [main] INFO  factory.BaseClass - navigating to the doctors page
+10:42:48.523 [main] INFO  factory.BaseClass - applying the filters
+10:43:17.764 [main] INFO  factory.BaseClass - applied all the filters
+10:43:17.885 [main] INFO  factory.BaseClass - getting the doctors details
+10:43:19.107 [main] INFO  factory.BaseClass - printing the details in the excel
+10:43:22.971 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:43:23.056 [main] INFO  factory.BaseClass - navigating to the surgeries page
+10:43:50.806 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:43:50.977 [main] INFO  factory.BaseClass - navigating to the corporate
+10:43:51.060 [main] INFO  factory.BaseClass - selecting heath and wellness
+10:43:55.378 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+10:44:20.558 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+10:44:20.673 [main] INFO  factory.BaseClass - navigating to the corporate
+10:44:20.762 [main] INFO  factory.BaseClass - selecting heath and wellness
+10:44:22.048 [main] INFO  factory.BaseClass - verifying with the valid inputs

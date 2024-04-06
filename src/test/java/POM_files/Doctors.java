@@ -171,7 +171,8 @@ public class Doctors extends BasePage {
 	}
 	
 	
-	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
+//	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
+	@FindBy(xpath = "//*[@id='root']/div/div/div[1]/div[1]/div[2]/div/div[2]/div[5]/a/div[1]") WebElement surgeriesElement;
 	
 	public void surgeriesClick() throws InterruptedException {
 //		if(surgeriesElement.isDisplayed()) {
@@ -180,7 +181,8 @@ public class Doctors extends BasePage {
 //		}
 //		return false;
 		
-		TimeUnit.SECONDS.sleep(4);
+//		TimeUnit.SECONDS.sleep(4);
+		Thread.sleep(4);
 		surgeriesElement.click();
 		
 	}
