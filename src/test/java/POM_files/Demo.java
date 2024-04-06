@@ -1,5 +1,6 @@
 package POM_files;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,8 +10,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Demo extends BasePage {
 	
+	JavascriptExecutor js;
+	
 	public Demo(WebDriver driver) {
 		super(driver);
+		js = (JavascriptExecutor)driver;
 	}
 	
 	@FindBy(xpath = "(//input)[1]") WebElement nameElement;
@@ -19,22 +23,28 @@ public class Demo extends BasePage {
 	@FindBy(xpath = "(//input)[4]") WebElement mailElement;
 	
 	public void name(String name) {
-		nameElement.sendKeys(name);
+//		nameElement.sendKeys(name);
+		js.executeScript("arguments[0].setAttribute('value', '" + name +"')", nameElement);
 	}
 	
 	public void org(String org) {
-		orgElement.sendKeys(org);
+//		orgElement.sendKeys(org);
+		js.executeScript("arguments[0].setAttribute('value', '" + org +"')", orgElement);
 	}
 	
 	public String phn(String phn) {
 		phnElement.clear();
-		phnElement.sendKeys(phn);
+//		phnElement.sendKeys(phn);
+		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
+		
 		return phnElement.getCssValue("color");
 	}
 	
 	public String mail(String mail) {
 		mailElement.clear();
-		mailElement.sendKeys(mail);
+//		mailElement.sendKeys(mail);
+		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
+		
 		return mailElement.getCssValue("color");
 	}
 	
@@ -58,8 +68,10 @@ public class Demo extends BasePage {
 		return scheduleADemoElement.isEnabled();
 	}
 	
+	
 	public void scheduleADemoClick() {
-		scheduleADemoElement.click();
+//		scheduleADemoElement.click();
+		js.executeScript("arguments[0].click()", scheduleADemoElement);
 	}
 	
 	@FindBy(xpath = "(//div[@class='text-center']/div)[1]") WebElement thankYouElement;

@@ -36,6 +36,7 @@ public class Surgeries extends BasePage {
 		String[] surList = new String[surgeriesListElement.size()];
 		for(int i=0;i<surList.length;i++) {
 			surList[i] = surgeriesListElement.get(i).getText();
+			System.out.println(surList[i]);
 		}
 		return surList;
 	}
