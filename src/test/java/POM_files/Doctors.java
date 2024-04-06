@@ -22,8 +22,13 @@ public class Doctors extends BasePage {
 	@FindBy(xpath="//*[@class=\"c-dropdown__list__item\" and @tabindex=\"0\"]") List<WebElement> dropdown;
 	@FindBy(xpath="//*[text()=\"Experience\"]") WebElement Experience;
 	
-	public int getRandomIndex(int limit) 
+	public int getRandomIndex(int limit) throws InterruptedException 
 	{
+		
+		if(noOfDoc() <= 80) {
+			limit = 2;
+		}
+		
 		Random r = new Random();
 		int randomIndex = r.nextInt(limit);
 		return randomIndex;
@@ -78,6 +83,10 @@ public class Doctors extends BasePage {
 		TimeUnit.SECONDS.sleep(2);
 
 		int randomFeeIndex = getRandomIndex(3);
+		
+		if(noOfDoc() <= 20) {
+			randomFeeIndex = 1;
+		}
 	    WebElement fees = filtersList.get(randomFeeIndex);
 	    fees.click();
 
@@ -86,6 +95,10 @@ public class Doctors extends BasePage {
 	    allfilters.click();
 
 	    int randomIndexavailabilty = getRandomIndex(3)+4; 
+	    
+	    if(noOfDoc() <= 20) {
+	    	randomIndexavailabilty = 7;
+		}
 	    WebElement avail = filtersList.get(randomIndexavailabilty);
 	    
 	    TimeUnit.SECONDS.sleep(2);
@@ -105,7 +118,7 @@ public class Doctors extends BasePage {
 	
 	@FindBy(xpath="//*[text()=\"Relevance\"]") WebElement sort;
 	
-	public void sort() {
+	public void sort() throws InterruptedException {
 
 		sort.click();
 		int limit = dropdown.size();

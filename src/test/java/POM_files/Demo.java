@@ -35,6 +35,7 @@ public class Demo extends BasePage {
 	public String phn(String phn, JavascriptExecutor js) {
 		phnElement.clear();
 //		phnElement.sendKeys(phn);
+//		js.executeScript("arguments[0].value = '';", phnElement);
 		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
 		
 		return phnElement.getCssValue("color");
@@ -43,8 +44,11 @@ public class Demo extends BasePage {
 	public String mail(String mail, JavascriptExecutor js) {
 		mailElement.clear();
 //		mailElement.sendKeys(mail);
+		
+//		js.executeScript("arguments[0].value = '';", mailElement);
 		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
 		
+//		js.executeScript("arguments[0].value= 'mail';", mailElement);
 		return mailElement.getCssValue("color");
 	}
 	
