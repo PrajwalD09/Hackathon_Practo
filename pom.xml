@@ -3,6 +3,10 @@
   <groupId>hackathon</groupId>
   <artifactId>hackathon</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>  
   
     <build>
     <pluginManagement>
@@ -24,6 +28,7 @@
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
        	</configuration>-->
+       	
         </plugin>
       </plugins>
     </pluginManagement>

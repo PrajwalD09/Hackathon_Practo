@@ -42,15 +42,18 @@ public class GettingSurgeriesList {
 //	}
 	
 	@When("surgeries is clicked")
-	public void surgeries_is_clicked() {
+	public void surgeries_is_clicked() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 		driver = Hooks.getDriver();
 		logger = Hooks.getLogger();
 		doctorsPOM = new Doctors(driver);
 		logger.info("navigating to the surgeries page");
 		
-		boolean flag = doctorsPOM.surgeriesClick();
-		Assert.assertTrue(flag);
+//		boolean flag = doctorsPOM.surgeriesClick();
+//		Assert.assertTrue(flag);
+		
+		doctorsPOM.surgeriesClick();
+		Assert.assertTrue(true);
 	}
 
 	@Then("the surgeries list should be shown and list has to be retrieved")

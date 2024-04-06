@@ -173,15 +173,16 @@ public class Doctors extends BasePage {
 	
 	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
 	
-	public boolean surgeriesClick() {
+	public void surgeriesClick() throws InterruptedException {
 //		if(surgeriesElement.isDisplayed()) {
 //			surgeriesElement.click();
 //			return true;
 //		}
 //		return false;
 		
+		TimeUnit.SECONDS.sleep(4);
 		surgeriesElement.click();
-		return true;
+		
 	}
 	//------------------------------------------------------------------------------
 	

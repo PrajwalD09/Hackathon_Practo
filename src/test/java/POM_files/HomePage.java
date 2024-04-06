@@ -81,11 +81,12 @@ public class HomePage extends BasePage {
 		int randomSpecialityIndex = getRandomIndex(limit);
 		String speciality = specialities.get(randomSpecialityIndex).getText();
 
+		searchBox.sendKeys(speciality);
+		TimeUnit.SECONDS.sleep(3);
+		
 		System.out.println(speciality);
 		System.out.println(firstelement.getText());
 		
-		searchBox.sendKeys(speciality);
-		TimeUnit.SECONDS.sleep(3);
 
 		if(!firstelement.getText().contains(speciality)) {
 			return false;
