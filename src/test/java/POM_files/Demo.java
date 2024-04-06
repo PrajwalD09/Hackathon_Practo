@@ -34,16 +34,16 @@ public class Demo extends BasePage {
 	
 	public String phn(String phn) {
 		phnElement.clear();
-//		phnElement.sendKeys(phn);
-		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
+		phnElement.sendKeys(phn);
+//		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
 		
 		return phnElement.getCssValue("color");
 	}
 	
 	public String mail(String mail) {
 		mailElement.clear();
-//		mailElement.sendKeys(mail);
-		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
+		mailElement.sendKeys(mail);
+//		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
 		
 		return mailElement.getCssValue("color");
 	}
@@ -70,8 +70,8 @@ public class Demo extends BasePage {
 	
 	
 	public void scheduleADemoClick() {
-//		scheduleADemoElement.click();
-		js.executeScript("arguments[0].click()", scheduleADemoElement);
+		scheduleADemoElement.click();
+//		js.executeScript("arguments[0].click()", scheduleADemoElement);
 	}
 	
 	@FindBy(xpath = "(//div[@class='text-center']/div)[1]") WebElement thankYouElement;
