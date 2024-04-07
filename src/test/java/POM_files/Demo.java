@@ -23,30 +23,30 @@ public class Demo extends BasePage {
 	@FindBy(xpath = "(//input)[4]") WebElement mailElement;
 	
 	public void name(String name,  JavascriptExecutor js) {
-//		nameElement.sendKeys(name);
-		js.executeScript("arguments[0].setAttribute('value', '" + name +"')", nameElement);
+		nameElement.sendKeys(name);
+//		js.executeScript("arguments[0].setAttribute('value', '" + name +"')", nameElement);
 	}
 	
 	public void org(String org, JavascriptExecutor js) {
-//		orgElement.sendKeys(org);
-		js.executeScript("arguments[0].setAttribute('value', '" + org +"')", orgElement);
+		orgElement.sendKeys(org);
+//		js.executeScript("arguments[0].setAttribute('value', '" + org +"')", orgElement);
 	}
 	
 	public String phn(String phn, JavascriptExecutor js) {
 		phnElement.clear();
-//		phnElement.sendKeys(phn);
+		phnElement.sendKeys(phn);
 //		js.executeScript("arguments[0].value = '';", phnElement);
-		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
+//		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
 		
 		return phnElement.getCssValue("color");
 	}
 	
 	public String mail(String mail, JavascriptExecutor js) {
 		mailElement.clear();
-//		mailElement.sendKeys(mail);
+		mailElement.sendKeys(mail);
 		
 //		js.executeScript("arguments[0].value = '';", mailElement);
-		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
+//		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
 		
 //		js.executeScript("arguments[0].value= 'mail';", mailElement);
 		return mailElement.getCssValue("color");
@@ -54,9 +54,13 @@ public class Demo extends BasePage {
 	
 	@FindBy(xpath = "//header[1]/div[2]/div/form/div[5]/select") WebElement orgSizeElement;
 	
-	public void orgSizeSelect() {
+	public void orgSizeSelect() throws InterruptedException {
 		Select select = new Select(orgSizeElement);
 		select.selectByVisibleText("10001+");
+		
+//		js.executeScript("arguments[0].click()", orgSizeElement);
+//		Thread.sleep(3);
+//		((JavascriptExecutor)driver).executeScript("arguments[0].click();", driver.findElement(By.xpath("//*[@id=\"organizationSize\"]/option[6]")));
 	}
 	
 	@FindBy(xpath = "//header[1]/div[2]/div/form/div[6]/select") WebElement interestedInElement;
@@ -74,8 +78,8 @@ public class Demo extends BasePage {
 	
 	
 	public void scheduleADemoClick(JavascriptExecutor js) {
-//		scheduleADemoElement.click();
-		js.executeScript("arguments[0].click()", scheduleADemoElement);
+		scheduleADemoElement.click();
+//		js.executeScript("arguments[0].click()", scheduleADemoElement);
 	}
 	
 	@FindBy(xpath = "(//div[@class='text-center']/div)[1]") WebElement thankYouElement;

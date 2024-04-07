@@ -25,8 +25,8 @@ public class Doctors extends BasePage {
 	public int getRandomIndex(int limit) throws InterruptedException 
 	{
 		
-		if(noOfDoc() <= 80) {
-			limit = 2;
+		if(noOfDoc() <= 100) {
+			limit = 1;
 		}
 		
 		Random r = new Random();
@@ -48,6 +48,10 @@ public class Doctors extends BasePage {
 
 		int limit = dropdown.size();
 		int randomStoryIndex = getRandomIndex(limit);
+		
+		if(noOfDoc() <= 20) {
+			randomStoryIndex = 0;
+		}
 		WebElement stories = dropdown.get(randomStoryIndex);
 
 		stories.click();
@@ -64,6 +68,10 @@ public class Doctors extends BasePage {
 
 		int limit = dropdown.size();
 		int randomExpIndex = getRandomIndex(limit);
+		
+		if(noOfDoc() <= 20) {
+			randomExpIndex = 1;
+		}
 
 		WebElement exp = dropdown.get(randomExpIndex);
 
@@ -84,19 +92,19 @@ public class Doctors extends BasePage {
 
 		int randomFeeIndex = getRandomIndex(3);
 		
-		if(noOfDoc() <= 20) {
+		if(noOfDoc() <= 50) {
 			randomFeeIndex = 1;
 		}
 	    WebElement fees = filtersList.get(randomFeeIndex);
 	    fees.click();
 
-	    TimeUnit.SECONDS.sleep(4);
+	    TimeUnit.SECONDS.sleep(2);
 
 	    allfilters.click();
 
 	    int randomIndexavailabilty = getRandomIndex(3)+4; 
 	    
-	    if(noOfDoc() <= 20) {
+	    if(noOfDoc() <= 50) {
 	    	randomIndexavailabilty = 7;
 		}
 	    WebElement avail = filtersList.get(randomIndexavailabilty);

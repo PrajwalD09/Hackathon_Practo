@@ -76,11 +76,11 @@ public class FindingHospitalsStepDef {
 		
 		while(true) 
 		{
-			TimeUnit.SECONDS.sleep(3);
+//			TimeUnit.SECONDS.sleep(1);
 			doctorsPOM.patientStoriesFilter();
-			TimeUnit.SECONDS.sleep(3);
+//			TimeUnit.SECONDS.sleep(2);
 			doctorsPOM.expFilter();
-			TimeUnit.SECONDS.sleep(3);
+//			TimeUnit.SECONDS.sleep(3);
 			doctorsPOM.allFilter();
 			TimeUnit.SECONDS.sleep(3);
 			
@@ -90,6 +90,7 @@ public class FindingHospitalsStepDef {
 				break;
 			}
 			
+			TimeUnit.SECONDS.sleep(1);
 			doctorsPOM.reset();
 		}
 		
