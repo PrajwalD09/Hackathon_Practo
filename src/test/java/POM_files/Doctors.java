@@ -205,69 +205,16 @@ public class Doctors extends BasePage {
 //	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
 	@FindBy(xpath = "//*[@id='root']/div/div/div[1]/div[1]/div[2]/div/div[2]/div[5]/a/div[1]") WebElement surgeriesElement;
 	
-	public void surgeriesClick( JavascriptExecutor js) throws InterruptedException {
-//		if(surgeriesElement.isDisplayed()) {
-//			surgeriesElement.click();
-//			return true;
-//		}
-//		return false;
+	public boolean surgeriesClick( ) throws InterruptedException {
+		if(surgeriesElement.isDisplayed()) {
+			surgeriesElement.click();
+			return true;
+		}
+		return false;
 		
-		TimeUnit.SECONDS.sleep(4);
-//		surgeriesElement.click();
-		js.executeScript("arguments[0].click()", surgeriesElement);
+//		TimeUnit.SECONDS.sleep(4);
+////		surgeriesElement.click();
+//		js.executeScript("arguments[0].click()", surgeriesElement);
 		
 	}
-	//------------------------------------------------------------------------------
-	
-//	@FindBy(xpath = "//span[text()='All Filters']") WebElement allFiltersDD;
-//	@FindBy(xpath = "//span[text()='Above ₹500']") WebElement priceElement;
-//	@FindBy(xpath = "(//span[text()='Available Today'])[1]") WebElement availabilityElement;
-//	
-//	public void allFilter() throws InterruptedException {
-//		allFiltersDD.click();
-//		priceElement.click();
-//		Thread.sleep(1000);
-//		allFiltersDD.click();
-//		availabilityElement.click();
-//	}
-	
-//	@FindBy(xpath = "//span[text()='Patient Stories']") WebElement patientStoriesDD;
-//	@FindBy(xpath = "//span[contains(text(),'10+ Patient')]") WebElement patientStoriesElement;
-//	
-//	public void patientStoriesFilter() {
-//		patientStoriesDD.click();
-//		patientStoriesElement.click();
-//	}
-//	
-//	@FindBy(xpath = "//span[text()='Experience']") WebElement expDD;
-//	@FindBy(xpath = "//span[contains(text(),'5+ Years')]") WebElement expElement;
-//	
-//	public void expFilter() {
-//		expDD.click();
-//		expElement.click();
-//	}
-//	
-//	@FindBy(xpath = "//span[text()='Relevance']") WebElement sortDD;
-//	@FindBy(xpath = "//span[text()='Experience - High to Low']") WebElement sortElement;
-//	
-//	public void sorting() {
-//		sortDD.click();
-//		sortElement.click();
-//	}
-//	
-//	@FindBy(className = "doctor-name") List<WebElement> doctorsNamesList;
-//	
-//	public String[] doctorsNames() {
-//		String[] names = new String[6];
-//		for(int i=0;i<6;i++) {
-//			names[i] = doctorsNamesList.get(i).getText();
-//		}
-//		return names;
-//	}
-//	
-		
-	
-	
-	
-	
 }

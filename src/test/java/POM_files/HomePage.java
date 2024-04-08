@@ -1,5 +1,6 @@
 package POM_files;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -7,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import factory.BaseClass;
 
 public class HomePage extends BasePage {
 	
@@ -40,7 +43,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//*[@class='c-omni-suggestion-group']/div[1]") WebElement firstelement;
 	 
 	
-	public boolean selectCity() throws InterruptedException 
+	public boolean selectCity() throws InterruptedException, IOException 
 	{
 		locationBox.click();
 		locationBox.clear();
@@ -53,6 +56,7 @@ public class HomePage extends BasePage {
 		
 		System.out.println(cityName);
 		System.out.println(firstelement.getText());
+		BaseClass.screenShot("City Captured");
 		
 		
 		if(!firstelement.getText().contains(cityName)) {
@@ -72,7 +76,7 @@ public class HomePage extends BasePage {
 	
 	@FindBy(xpath = "//div[@class = 'c-omni-suggestion-item__content__title']") List<WebElement> specialities;
 
-	public boolean selectSpeciality() throws InterruptedException 
+	public boolean selectSpeciality() throws InterruptedException, IOException 
 	{
 		searchBox.click();
 		searchBox.clear();
@@ -86,6 +90,7 @@ public class HomePage extends BasePage {
 		
 		System.out.println(speciality);
 		System.out.println(firstelement.getText());
+		BaseClass.screenShot("Speciality Captured");
 		
 
 		if(!firstelement.getText().contains(speciality)) {

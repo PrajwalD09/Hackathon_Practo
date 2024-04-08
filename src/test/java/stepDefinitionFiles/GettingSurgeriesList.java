@@ -14,6 +14,7 @@ import POM_files.Doctors;
 import POM_files.HomePage;
 import POM_files.Surgeries;
 import Utilities.ExcelUtils;
+import factory.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -27,19 +28,6 @@ public class GettingSurgeriesList {
 	Doctors doctorsPOM;
 	Surgeries surgeriesPOM;
 	JavascriptExecutor js;
-
-//	@Given("navigate to practo")
-//	public void navigate_to_practo() {
-//		driver = hooks.getDriver();
-//		properties = hooks.getProperties();
-//		logger = hooks.getLogger();
-//		driver.get("https://www.practo.com/");
-//		driver.manage().window().maximize();
-//		homePOM = new HomePage(driver);
-//		sa = new SoftAssert();
-//		//Assert.assertTrue(practoPOM.logo());
-//		
-//	}
 	
 	@When("surgeries is clicked")
 	public void surgeries_is_clicked() throws InterruptedException {
@@ -49,22 +37,25 @@ public class GettingSurgeriesList {
 		doctorsPOM = new Doctors(driver);
 		logger.info("navigating to the surgeries page");
 		
-//		boolean flag = doctorsPOM.surgeriesClick();
-//		Assert.assertTrue(flag);
-		js = (JavascriptExecutor)driver;
-		
-		doctorsPOM.surgeriesClick(js);
+		boolean flag = doctorsPOM.surgeriesClick();
+		Assert.assertTrue(flag);
+//		js = (JavascriptExecutor)driver;
+//		
+//		doctorsPOM.surgeriesClick(js);
 		Assert.assertTrue(true);
 	}
 
 	@Then("the surgeries list should be shown and list has to be retrieved")
 	public void the_surgeries_list_should_be_shown_and_list_has_to_be_retrieved() throws IOException, InterruptedException {
-	    // Write code here that turns the phrase above into concrete actions
+
 		surgeriesPOM = new Surgeries(driver);
 		logger.info("scrolling down to the surgeries");
 		js = (JavascriptExecutor)driver;
 		surgeriesPOM.scrollDown(js);
 		
+		TimeUnit.SECONDS.sleep(2);
+		
+		BaseClass.screenShot("Surgeries List");
 		String[] surgeriesList = surgeriesPOM.surgeriesList();
 		
 		if(surgeriesList == null) {
@@ -73,7 +64,6 @@ public class GettingSurgeriesList {
 		else {
 			Assert.assertTrue(true);;
 		}
-		
 		
 		ExcelUtils.writeIntoExcel(surgeriesPOM.surgeriesList());
 		logger.info("printing the surgeries list in the excel");

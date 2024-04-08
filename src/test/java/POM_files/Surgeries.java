@@ -13,17 +13,7 @@ public class Surgeries extends BasePage {
 		super(driver);
 	}
 	
-@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
-	
-//	public boolean surgeriesClick() {
-//		
-//		if(surgeriesElement.isDisplayed()) {
-//			surgeriesElement.click();
-//			return true;
-//		}
-//		return false;
-//	}
-	
+	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
 	@FindBy(xpath = "//*[text()='Popular Surgeries']") WebElement scrollElement;
 	
 	public void scrollDown(JavascriptExecutor js) {
@@ -62,27 +52,27 @@ public class Surgeries extends BasePage {
 		js.executeScript("window.scrollTo(0,200)");
 	}
 	
-	@FindBy(xpath = "(//input)[1]") WebElement nameElement;
-	@FindBy(xpath = "(//input)[2]") WebElement orgElement;
-	@FindBy(xpath = "(//input)[3]") WebElement phnElement;
-	@FindBy(xpath = "(//input)[4]") WebElement mailElement;
-	
-	public void name(String name) {
-		nameElement.sendKeys(name);
-	}
-	
-	public void org(String org) {
-		orgElement.sendKeys(org);
-	}
-	
-	public void phn(String phn) {
-		phnElement.clear();
-		phnElement.sendKeys(phn);
-	}
-	
-	public void mail(String mail) {
-		mailElement.clear();
-		mailElement.sendKeys(mail);
-	}
+//	@FindBy(xpath = "(//input)[1]") WebElement nameElement;
+//	@FindBy(xpath = "(//input)[2]") WebElement orgElement;
+//	@FindBy(xpath = "(//input)[3]") WebElement phnElement;
+//	@FindBy(xpath = "(//input)[4]") WebElement mailElement;
+//	
+//	public void name(String name) {
+//		nameElement.sendKeys(name);
+//	}
+//	
+//	public void org(String org) {
+//		orgElement.sendKeys(org);
+//	}
+//	
+//	public void phn(String phn) {
+//		phnElement.clear();
+//		phnElement.sendKeys(phn);
+//	}
+//	
+//	public void mail(String mail) {
+//		mailElement.clear();
+//		mailElement.sendKeys(mail);
+//	}
 	
 }

@@ -58,7 +58,6 @@ public class Hooks {
     }
 	
 	@AfterStep
-//    public static void tearDown(Scenario scenario) throws IOException {
 	public static void tearDown(Scenario scenario) throws IOException {  
 	
        if(!scenario.isFailed()) {
@@ -72,7 +71,7 @@ public class Hooks {
 	@AfterAll
 	public static void afterAll() throws IOException {
 		driver.quit();
-//		openExtentReport();
+		openExtentReport();
 	}
 	
 }

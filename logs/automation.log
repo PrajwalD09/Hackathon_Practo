@@ -1,7 +1,14 @@
-14:08:16.162 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-14:08:16.311 [main] INFO  factory.BaseClass - navigating to the corporate
-14:08:16.399 [main] INFO  factory.BaseClass - selecting heath and wellness
-14:08:18.036 [main] INFO  factory.BaseClass - verifying with the valid inputs
-14:08:20.164 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-14:08:24.228 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-14:08:24.229 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
+15:37:08.983 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+15:37:17.478 [main] INFO  factory.BaseClass - Navigated to PRACTO Homepage
+15:37:17.672 [main] INFO  factory.BaseClass - navigating to the corporate
+15:37:17.823 [main] INFO  factory.BaseClass - selecting heath and wellness
+15:37:19.692 [main] INFO  factory.BaseClass - verifying with the valid inputs
+15:37:21.884 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+15:37:26.091 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+15:37:26.100 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
+15:37:28.264 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
+15:37:30.425 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
+15:37:32.556 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
+15:37:39.403 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+15:38:01.500 [main] INFO  factory.BaseClass - getting the success message
+15:38:01.646 [main] INFO  factory.BaseClass - verifying the success message

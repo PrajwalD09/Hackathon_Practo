@@ -13,6 +13,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 	tags = "", 
 //	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features", 
 	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\TakingDemo.feature",
+//	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\FindingSurgeriesList.feature",
 	glue = "stepDefinitionFiles",
 	plugin = {"pretty","html:reports/CucumberReport.html", 
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
