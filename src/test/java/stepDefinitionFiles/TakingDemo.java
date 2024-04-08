@@ -50,7 +50,7 @@ public class TakingDemo {
 	 
 	@Then("health and wellnes plans should be clicked")
 	public void health_and_wellnes_plans_should_be_clicked() throws IOException {
-	    // Write code here that turns the phrase above into concrete actions
+		
 		logger.info("selecting heath and wellness");
 		surgeriesPOM.healthNWellness(js);
 		BaseClass.screenShot("Health and Wellness");
@@ -100,6 +100,7 @@ public class TakingDemo {
 		logger.info("verifying the visibility of schedule a demo visibilty");
 		TimeUnit.SECONDS.sleep(4);
 		Assert.assertFalse(demoPOM.scheduleADemoVisibility());
+		System.out.println("Button is disabled");
 		
 	}	
 	 
@@ -135,6 +136,7 @@ public class TakingDemo {
 		
 		TimeUnit.SECONDS.sleep(2);
 		Assert.assertNotEquals(demoPOM.mail(ExcelUtils.getData(1, 5)), invalidEntryColorRGB);
+		
 		TimeUnit.SECONDS.sleep(2);
 		BaseClass.screenShot("Valid Details");
 	
@@ -152,7 +154,8 @@ public class TakingDemo {
 		
 		demoPOM.scheduleADemoClick();
 		
-		Thread.sleep(20000);
+//		Thread.sleep(20000);
+		TimeUnit.SECONDS.sleep(10);
 		logger.info("getting the success message");
 	}
 	
@@ -164,8 +167,10 @@ public class TakingDemo {
 		
 		BaseClass.screenShot("Success Message");
 		Assert.assertTrue(msg.equalsIgnoreCase("thank you"));
-		sa = new SoftAssert();
-		sa.assertAll();
+		logger.info("Verified the Thank You message");
+		
+//		sa = new SoftAssert();
+//		sa.assertAll();
 		
 	}
 	 

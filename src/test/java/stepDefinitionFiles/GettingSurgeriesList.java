@@ -35,14 +35,15 @@ public class GettingSurgeriesList {
 		driver = Hooks.getDriver();
 		logger = Hooks.getLogger();
 		doctorsPOM = new Doctors(driver);
-		logger.info("navigating to the surgeries page");
+		logger.info("Navigating to the surgeries page");
 		
 		boolean flag = doctorsPOM.surgeriesClick();
+		logger.info("Clicked on Surgeries");
 		Assert.assertTrue(flag);
 //		js = (JavascriptExecutor)driver;
 //		
 //		doctorsPOM.surgeriesClick(js);
-		Assert.assertTrue(true);
+//		Assert.assertTrue(true);
 	}
 
 	@Then("the surgeries list should be shown and list has to be retrieved")
@@ -53,7 +54,7 @@ public class GettingSurgeriesList {
 		js = (JavascriptExecutor)driver;
 		surgeriesPOM.scrollDown(js);
 		
-		TimeUnit.SECONDS.sleep(2);
+		TimeUnit.SECONDS.sleep(3);
 		
 		BaseClass.screenShot("Surgeries List");
 		String[] surgeriesList = surgeriesPOM.surgeriesList();
@@ -64,6 +65,12 @@ public class GettingSurgeriesList {
 		else {
 			Assert.assertTrue(true);;
 		}
+		
+		System.out.println("----------------- Surgeries List ----------------------");
+		for(int i=0; i<surgeriesList.length; i++) {
+			System.out.println(i+1 + ". " + surgeriesList[i]);
+		}
+		System.out.println("-------------------------------------------------------");
 		
 		ExcelUtils.writeIntoExcel(surgeriesPOM.surgeriesList());
 		logger.info("printing the surgeries list in the excel");

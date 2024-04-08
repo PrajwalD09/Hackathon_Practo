@@ -33,7 +33,8 @@ public class FindingHospitalsStepDef {
 	JavascriptExecutor js;
 	
 	@Given("navigate to practo")
-	public void navigate_to_practo() throws InterruptedException, IOException {
+	public void navigate_to_practo() throws InterruptedException, IOException 
+	{
 		driver = Hooks.getDriver();
 		properties = Hooks.getProperties();
 		logger = Hooks.getLogger();
@@ -57,9 +58,11 @@ public class FindingHospitalsStepDef {
 		
 		boolean flag1 = homePOM.selectCity();
 		Assert.assertEquals(true, flag1);
+		logger.info("Entered the City name");
 
 		boolean flag2 = homePOM.selectSpeciality();
 		Assert.assertEquals(true, flag2);
+		logger.info("Entered the Speciality name");
 		
 		logger.info("navigating to the doctors page");
 	}
@@ -72,27 +75,34 @@ public class FindingHospitalsStepDef {
 		
 		while(true) 
 		{
-//			TimeUnit.SECONDS.sleep(1);
+			TimeUnit.SECONDS.sleep(2);
 			doctorsPOM.patientStoriesFilter();
-//			TimeUnit.SECONDS.sleep(2);
-			doctorsPOM.expFilter();
-//			TimeUnit.SECONDS.sleep(3);
-			doctorsPOM.allFilter();
-			TimeUnit.SECONDS.sleep(3);
+			logger.info("Applied Patient Stories");
 			
+			TimeUnit.SECONDS.sleep(1);
+			doctorsPOM.expFilter();
+			logger.info("Applied Experience filter");
+			
+			TimeUnit.SECONDS.sleep(1);
+			doctorsPOM.allFilter();
+			logger.info("Applied All Filters");
+			
+			TimeUnit.SECONDS.sleep(1);	
 			int noOfDoc = doctorsPOM.noOfDoc();
 			
 			if(noOfDoc >= 5) {
+				logger.info("Doctors are greater than 5");
 				break;
 			}
 			
 			TimeUnit.SECONDS.sleep(1);
+			logger.info("Clicked reset button");
 			doctorsPOM.reset();
 		}
 		
 		doctorsPOM.sort();
 		BaseClass.screenShot("Filters Applied");
-		logger.info("applied all the filters");
+		logger.info("Sorted the doctors list");
 		
 		Assert.assertTrue(true);
 	
@@ -101,16 +111,33 @@ public class FindingHospitalsStepDef {
 	@Then("get the details of first five doctors")
 	public void get_the_details_of_first_five_doctors() throws InterruptedException 
 	{
-		logger.info("getting the doctors details");
+		logger.info("Getting the doctors details");
 		
 		if(doctorsPOM.doctorsNames() == null || doctorsPOM.doctorsField() == null || doctorsPOM.doctorsExp() == null || doctorsPOM.doctorsPracticeLoc() == null){
-			logger.info("failed getting the doctors details");
+			logger.error("Failed getting the doctors details");
 			Assert.fail();
 		}
 		
-		ExcelUtils.setData(doctorsPOM.doctorsNames(), doctorsPOM.doctorsField(), doctorsPOM.doctorsExp(), doctorsPOM.doctorsPracticeLoc());
-		Assert.assertTrue(true);
+		String[] names = doctorsPOM.doctorsNames();
+		String[] fields = doctorsPOM.doctorsField();
+		String[] experience = doctorsPOM.doctorsExp(); 
+		String[] location = doctorsPOM.doctorsPracticeLoc();
+				
+		ExcelUtils.setData(names, fields, experience, location);
+		
+		System.out.println("--------------- Doctors --------------------");
+		System.out.println("No. of Doctors are : " + doctorsPOM.noOfDoc());
+		System.out.println("");
+		
+		for(int i=0; i<5; i++) 
+		{
+			System.out.println(i+1 + ". " + names[i] + "\n" + fields[i] + "\n" + experience[i] + "\n" + location[i]);
+			System.out.println("");
+		}
+		
+		System.out.println("-----------------------------------------------");
 		logger.info("printing the details in the excel");
+		Assert.assertTrue(true);
 	}
 
 }

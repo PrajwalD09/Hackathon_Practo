@@ -26,7 +26,6 @@ public class Surgeries extends BasePage {
 		String[] surList = new String[surgeriesListElement.size()];
 		for(int i=0;i<surList.length;i++) {
 			surList[i] = surgeriesListElement.get(i).getText();
-			System.out.println(surList[i]);
 		}
 		return surList;
 	}
@@ -51,28 +50,5 @@ public class Surgeries extends BasePage {
 		healthWellnessElement.click();
 		js.executeScript("window.scrollTo(0,200)");
 	}
-	
-//	@FindBy(xpath = "(//input)[1]") WebElement nameElement;
-//	@FindBy(xpath = "(//input)[2]") WebElement orgElement;
-//	@FindBy(xpath = "(//input)[3]") WebElement phnElement;
-//	@FindBy(xpath = "(//input)[4]") WebElement mailElement;
-//	
-//	public void name(String name) {
-//		nameElement.sendKeys(name);
-//	}
-//	
-//	public void org(String org) {
-//		orgElement.sendKeys(org);
-//	}
-//	
-//	public void phn(String phn) {
-//		phnElement.clear();
-//		phnElement.sendKeys(phn);
-//	}
-//	
-//	public void mail(String mail) {
-//		mailElement.clear();
-//		mailElement.sendKeys(mail);
-//	}
 	
 }

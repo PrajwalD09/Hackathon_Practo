@@ -22,8 +22,7 @@ public class Doctors extends BasePage {
 	@FindBy(xpath="//*[text()=\"Experience\"]") WebElement Experience;
 	
 	public int getRandomIndex(int limit) throws InterruptedException 
-	{
-		
+	{	
 		if(noOfDoc() <= 100) {
 			limit = 1;
 		}
@@ -36,12 +35,11 @@ public class Doctors extends BasePage {
 
 	public void patientStoriesFilter() throws InterruptedException 
 	{
-		TimeUnit.SECONDS.sleep(2);
-
+		
 		if(pstories.isDisplayed()) 
 		{
 			pstories.click();	
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(1);
 
 		}
 
@@ -59,11 +57,11 @@ public class Doctors extends BasePage {
  
 	public void expFilter() throws InterruptedException 
 	{
-		TimeUnit.SECONDS.sleep(2);
+//		TimeUnit.SECONDS.sleep(2);
 		
 		Experience.click();
 		
-		TimeUnit.SECONDS.sleep(2);
+		TimeUnit.SECONDS.sleep(1);
 
 		int limit = dropdown.size();
 		int randomExpIndex = getRandomIndex(limit);
@@ -83,11 +81,11 @@ public class Doctors extends BasePage {
 
 	public void allFilter() throws InterruptedException 
 	{
-		TimeUnit.SECONDS.sleep(2);
+//		TimeUnit.SECONDS.sleep(2);
 		
 		allfilters.click();
 		
-		TimeUnit.SECONDS.sleep(2);
+		TimeUnit.SECONDS.sleep(1);
 
 		int randomFeeIndex = getRandomIndex(3);
 		
@@ -108,7 +106,7 @@ public class Doctors extends BasePage {
 		}
 	    WebElement avail = filtersList.get(randomIndexavailabilty);
 	    
-	    TimeUnit.SECONDS.sleep(2);
+	    TimeUnit.SECONDS.sleep(1);
 	    avail.click();
 
 	}
@@ -140,12 +138,10 @@ public class Doctors extends BasePage {
 
 	public int noOfDoc() throws InterruptedException {
 
-		TimeUnit.SECONDS.sleep(5);
+		TimeUnit.SECONDS.sleep(2);
 		String doctorNumbersStr = docNums.getText();
-		System.out.println(doctorNumbersStr);
 
 		int doctors = Integer.parseInt(doctorNumbersStr.substring(0,doctorNumbersStr.indexOf(' ')));
-		System.out.println(doctors);
 
 		return doctors;
 
@@ -156,11 +152,10 @@ public class Doctors extends BasePage {
 	public String[] doctorsNames() throws InterruptedException {
 		
 		String[] doctorNamesArr = new String[5];
-
+		
 		for(int i=0; i<doctorNamesArr.length; i++) 
 		{
 			String doctorName = doctorsNameList.get(i).getText();
-			System.out.println(doctorName);
 			doctorNamesArr[i] = doctorName;
 		}	
 		
