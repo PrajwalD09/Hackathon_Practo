@@ -40,7 +40,7 @@ public class Demo extends BasePage {
 	
 	public String phn(String phn) throws InterruptedException {
 
-		phnElement.clear();
+		js.executeScript("arguments[0].value = '';", phnElement);
 		TimeUnit.SECONDS.sleep(3);
 //		phnElement.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE));
 		TimeUnit.SECONDS.sleep(3);
@@ -52,11 +52,12 @@ public class Demo extends BasePage {
 		return phnElement.getCssValue("color");
 	}
 		
-	public String mail(String mail) {
-		mailElement.clear();
-		
+	public String mail(String mail) throws InterruptedException {
+		js.executeScript("arguments[0].value = '';", mailElement);
+		TimeUnit.SECONDS.sleep(3);
 //		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
 		js.executeScript("arguments[0].value = arguments[1];", mailElement, mail);
+		TimeUnit.SECONDS.sleep(3);
 
 		return mailElement.getCssValue("color");
 	}

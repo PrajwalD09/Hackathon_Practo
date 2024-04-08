@@ -1,58 +1,61 @@
-13:34:30.946 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-13:34:35.214 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-13:34:35.214 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
-13:34:48.165 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-13:34:48.376 [main] INFO  factory.BaseClass - navigating to the corporate
-13:34:48.508 [main] INFO  factory.BaseClass - selecting heath and wellness
-13:34:49.819 [main] INFO  factory.BaseClass - verifying with the valid inputs
-13:34:51.905 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-13:34:56.108 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-13:34:56.108 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
-13:35:07.253 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
-13:36:59.565 [main] INFO  factory.BaseClass - running through chrome
-13:36:59.579 [main] INFO  factory.BaseClass - deleting all the cookies
-13:36:59.586 [main] INFO  factory.BaseClass - applying the implicit wait
-13:37:05.315 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-13:37:05.553 [main] INFO  factory.BaseClass - navigating to the corporate
-13:37:05.712 [main] INFO  factory.BaseClass - selecting heath and wellness
-13:37:09.778 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
-13:37:12.329 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-13:37:16.568 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-13:37:16.568 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
-13:38:07.695 [main] INFO  factory.BaseClass - running through chrome
-13:38:07.712 [main] INFO  factory.BaseClass - deleting all the cookies
-13:38:07.720 [main] INFO  factory.BaseClass - applying the implicit wait
-13:38:13.385 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-13:38:13.625 [main] INFO  factory.BaseClass - navigating to the corporate
-13:38:13.783 [main] INFO  factory.BaseClass - selecting heath and wellness
-13:38:18.911 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
-13:38:21.452 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-13:38:25.751 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-13:38:25.751 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
-13:38:38.631 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-13:38:38.827 [main] INFO  factory.BaseClass - navigating to the corporate
-13:38:38.976 [main] INFO  factory.BaseClass - selecting heath and wellness
-13:40:58.934 [main] INFO  factory.BaseClass - running through chrome
-13:40:58.950 [main] INFO  factory.BaseClass - deleting all the cookies
-13:40:58.956 [main] INFO  factory.BaseClass - applying the implicit wait
-13:41:04.733 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-13:41:04.983 [main] INFO  factory.BaseClass - navigating to the corporate
-13:41:05.148 [main] INFO  factory.BaseClass - selecting heath and wellness
-13:41:10.252 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
-13:41:12.782 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-13:41:17.031 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-13:41:17.031 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
-13:41:19.217 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 2
-13:41:21.366 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 3
-13:41:29.500 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
-13:41:29.692 [main] INFO  factory.BaseClass - navigating to the corporate
-13:41:29.835 [main] INFO  factory.BaseClass - selecting heath and wellness
-13:41:31.182 [main] INFO  factory.BaseClass - verifying with the valid inputs
-13:41:33.266 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-13:41:37.455 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-13:41:37.456 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
-13:41:39.621 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
-13:41:41.777 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
-13:41:43.928 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
-13:44:03.483 [main] INFO  factory.BaseClass - running through chrome
-13:44:03.503 [main] INFO  factory.BaseClass - deleting all the cookies
+13:44:03.509 [main] INFO  factory.BaseClass - applying the implicit wait
+13:44:09.022 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+13:44:09.336 [main] INFO  factory.BaseClass - navigating to the corporate
+13:44:09.483 [main] INFO  factory.BaseClass - selecting heath and wellness
+13:44:14.125 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+13:44:18.422 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+13:44:18.617 [main] INFO  factory.BaseClass - navigating to the corporate
+13:44:18.759 [main] INFO  factory.BaseClass - selecting heath and wellness
+13:44:20.227 [main] INFO  factory.BaseClass - verifying with the valid inputs
+13:44:43.465 [main] INFO  factory.BaseClass - running through chrome
+13:44:43.479 [main] INFO  factory.BaseClass - deleting all the cookies
+13:44:43.485 [main] INFO  factory.BaseClass - applying the implicit wait
+13:44:48.959 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+13:44:49.204 [main] INFO  factory.BaseClass - navigating to the corporate
+13:44:49.351 [main] INFO  factory.BaseClass - selecting heath and wellness
+13:44:54.158 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+13:44:58.488 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+13:44:58.682 [main] INFO  factory.BaseClass - navigating to the corporate
+13:44:58.817 [main] INFO  factory.BaseClass - selecting heath and wellness
+13:45:00.222 [main] INFO  factory.BaseClass - verifying with the valid inputs
+13:48:35.208 [main] INFO  factory.BaseClass - running through chrome
+13:48:35.227 [main] INFO  factory.BaseClass - deleting all the cookies
+13:48:35.232 [main] INFO  factory.BaseClass - applying the implicit wait
+13:48:40.937 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+13:48:41.197 [main] INFO  factory.BaseClass - navigating to the corporate
+13:48:41.360 [main] INFO  factory.BaseClass - selecting heath and wellness
+13:48:46.137 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+13:48:48.767 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+13:48:53.029 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+13:48:53.030 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
+13:48:57.089 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+13:48:57.287 [main] INFO  factory.BaseClass - navigating to the corporate
+13:48:57.423 [main] INFO  factory.BaseClass - selecting heath and wellness
+13:48:58.811 [main] INFO  factory.BaseClass - verifying with the valid inputs
+13:49:01.030 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+13:49:05.248 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+13:49:05.250 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
+13:49:07.367 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
+13:49:09.458 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
+13:49:11.583 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
+13:49:16.045 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+14:02:42.048 [main] INFO  factory.BaseClass - running through chrome
+14:02:42.061 [main] INFO  factory.BaseClass - deleting all the cookies
+14:02:42.068 [main] INFO  factory.BaseClass - applying the implicit wait
+14:02:47.328 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+14:02:47.568 [main] INFO  factory.BaseClass - navigating to the corporate
+14:02:47.715 [main] INFO  factory.BaseClass - selecting heath and wellness
+14:02:51.747 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+14:02:54.308 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+14:02:58.355 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+14:02:58.355 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
+14:07:33.627 [main] INFO  factory.BaseClass - running through chrome
+14:07:33.650 [main] INFO  factory.BaseClass - deleting all the cookies
+14:07:33.658 [main] INFO  factory.BaseClass - applying the implicit wait
+14:07:39.925 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+14:07:40.138 [main] INFO  factory.BaseClass - navigating to the corporate
+14:07:40.226 [main] INFO  factory.BaseClass - selecting heath and wellness
+14:07:44.834 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+14:07:47.759 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+14:07:51.818 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+14:07:51.819 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
