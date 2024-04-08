@@ -11,9 +11,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 @CucumberOptions( 
 	tags = "", 
-	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features", 
+//	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features", 
+	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\TakingDemo.feature",
 	glue = "stepDefinitionFiles",
-	plugin = {"pretty","html:reports/htmlreport.html", 
+	plugin = {"pretty","html:reports/CucumberReport.html", 
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 	dryRun = false,
 	monochrome = true,

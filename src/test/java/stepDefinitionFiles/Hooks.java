@@ -45,7 +45,7 @@ public class Hooks {
 	
 	public static void openExtentReport() throws IOException {
         // Specify the path to your ExtentReports HTML file
-        String extentReportFilePath = System.getProperty("user.dir")+ "//test-output//SparkReport//Spark.html";
+        String extentReportFilePath = System.getProperty("user.dir")+ "//reports//CucumberReport.html";
  
             File reportFile = new File(extentReportFilePath);
             // Check if the file exists
@@ -61,16 +61,12 @@ public class Hooks {
 //    public static void tearDown(Scenario scenario) throws IOException {
 	public static void tearDown(Scenario scenario) throws IOException {  
 	
-//       if(!scenario.isFailed()) {
-//    	   TakesScreenshot ts = (TakesScreenshot)driver;
-//           byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
-//           scenario.attach(fileContent, "image/png", scenario.getName());  
-//       }
-       
-       TakesScreenshot ts = (TakesScreenshot)driver;
-       byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
-       scenario.attach(fileContent, "image/png", scenario.getName());
-         
+       if(!scenario.isFailed()) {
+    	   TakesScreenshot ts = (TakesScreenshot)driver;
+           byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
+           scenario.attach(fileContent, "image/png", scenario.getName()); 
+       }
+                
     }
 	
 	@AfterAll

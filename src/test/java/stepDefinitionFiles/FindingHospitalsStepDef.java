@@ -93,11 +93,11 @@ public class FindingHospitalsStepDef {
 			doctorsPOM.reset();
 		}
 		
-		Assert.assertTrue(true);
-		
 		doctorsPOM.sort();
 		logger.info("applied all the filters");
 		
+		Assert.assertTrue(true);
+	
 	}
 
 	@Then("get the details of first five doctors")

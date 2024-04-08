@@ -74,10 +74,15 @@ public class TakingDemo {
 		
 		js = (JavascriptExecutor)driver;
 				
-		demoPOM.name(ExcelUtils.getData(1,0), js);
+//		demoPOM.name(ExcelUtils.getData(1,0), js);
+		
+		demoPOM.name(ExcelUtils.getData(1,0));
 		
 		TimeUnit.SECONDS.sleep(2);
-		demoPOM.org(ExcelUtils.getData(1, 1), js);
+//		demoPOM.org(ExcelUtils.getData(1, 1), js);
+		
+		demoPOM.org(ExcelUtils.getData(1, 1));
+		
 		logger.info("choosing the organization size and interested option");
 		
 		TimeUnit.SECONDS.sleep(2);
@@ -91,7 +96,9 @@ public class TakingDemo {
         
 		for(int i=1; i<=3; i++) {
 			logger.info("verifying the email field with the invalid input no : " + i);
-			Assert.assertEquals(demoPOM.phn(ExcelUtils.getData(i, 2), js), invalidEntryColorRGB);
+//			Assert.assertEquals(demoPOM.phn(ExcelUtils.getData(i, 2), js), invalidEntryColorRGB);
+			
+			Assert.assertEquals(demoPOM.phn(ExcelUtils.getData(i, 2)), invalidEntryColorRGB);
 			TimeUnit.SECONDS.sleep(2);
 		}
 		
@@ -109,7 +116,9 @@ public class TakingDemo {
 		TimeUnit.SECONDS.sleep(2);
 		
 		for(int i=1; i<=4; i++) {
-			Assert.assertEquals(demoPOM.mail(ExcelUtils.getData(i, 4), js), invalidEntryColorRGB);
+//			Assert.assertEquals(demoPOM.mail(ExcelUtils.getData(i, 4), js), invalidEntryColorRGB);
+
+			Assert.assertEquals(demoPOM.mail(ExcelUtils.getData(i, 4)), invalidEntryColorRGB);
 			TimeUnit.SECONDS.sleep(2);
 		}
 //		Assert.assertEquals(demoPOM.mail(ExcelUtils.getData(1, 4)), invalidEntryColorRGB);
@@ -138,10 +147,14 @@ public class TakingDemo {
 		
 		js = (JavascriptExecutor)driver;
 		
-		demoPOM.name(ExcelUtils.getData(1,0), js);
+//		demoPOM.name(ExcelUtils.getData(1,0), js);
+		
+		demoPOM.name(ExcelUtils.getData(1,0));
 		
 		TimeUnit.SECONDS.sleep(2);
-		demoPOM.org(ExcelUtils.getData(1, 1), js);
+//		demoPOM.org(ExcelUtils.getData(1, 1), js);
+
+		demoPOM.org(ExcelUtils.getData(1, 1));
 		logger.info("choosing the organization size and interested option");
 		
 		TimeUnit.SECONDS.sleep(2);
@@ -155,7 +168,9 @@ public class TakingDemo {
 		
 		for(int i=1; i<=4; i++) {
 			logger.info("verifying the mail field with the valid input : " + i);
-			Assert.assertNotEquals(demoPOM.phn(ExcelUtils.getData(i, 3), js), invalidEntryColorRGB);
+//			Assert.assertNotEquals(demoPOM.phn(ExcelUtils.getData(i, 3), js), invalidEntryColorRGB);
+			
+			Assert.assertNotEquals(demoPOM.phn(ExcelUtils.getData(i, 3)), invalidEntryColorRGB);
 			TimeUnit.SECONDS.sleep(2);
 		}
 		
@@ -170,7 +185,9 @@ public class TakingDemo {
 //		logger.info("verifying the mail field with the valid inputs");
 //		TimeUnit.SECONDS.sleep(5);
 		
-		Assert.assertNotEquals(demoPOM.mail(ExcelUtils.getData(1, 5), js), "rgba(159, 58, 56, 1)");
+//		Assert.assertNotEquals(demoPOM.mail(ExcelUtils.getData(1, 5), js), "rgba(159, 58, 56, 1)");
+		
+		Assert.assertNotEquals(demoPOM.mail(ExcelUtils.getData(1, 5)), "rgba(159, 58, 56, 1)");
 		TimeUnit.SECONDS.sleep(2);
 	
 	}
@@ -181,7 +198,10 @@ public class TakingDemo {
 		js = (JavascriptExecutor)driver;
 		
 		Assert.assertTrue(demoPOM.scheduleADemoVisibility());
-		demoPOM.scheduleADemoClick(js);
+//		demoPOM.scheduleADemoClick(js);
+		
+		demoPOM.scheduleADemoClick();
+		
 		Thread.sleep(20000);
 		logger.info("getting the success message");
 	}
