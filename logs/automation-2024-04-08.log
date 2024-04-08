@@ -1,0 +1,59 @@
+23:01:58.988 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+23:01:59.014 [main] INFO  factory.BaseClass - Entering the search data
+23:02:20.849 [main] INFO  factory.BaseClass - navigating to the doctors page
+23:02:20.853 [main] INFO  factory.BaseClass - applying the filters
+23:03:34.896 [main] INFO  factory.BaseClass - applied all the filters
+23:03:34.900 [main] INFO  factory.BaseClass - getting the doctors details
+23:03:35.798 [main] INFO  factory.BaseClass - printing the details in the excel
+23:03:40.271 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+23:03:40.273 [main] INFO  factory.BaseClass - navigating to the surgeries page
+23:03:48.457 [main] INFO  factory.BaseClass - scrolling down to the surgeries
+23:03:51.186 [main] INFO  factory.BaseClass - printing the surgeries list in the excel
+23:03:58.229 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+23:03:58.320 [main] INFO  factory.BaseClass - navigating to the corporate
+23:03:58.322 [main] INFO  factory.BaseClass - selecting heath and wellness
+23:04:07.424 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+23:04:09.759 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+23:04:14.115 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+23:04:14.115 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
+23:04:16.332 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 2
+23:04:18.592 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 3
+23:04:31.902 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+23:04:41.192 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+23:04:41.272 [main] INFO  factory.BaseClass - navigating to the corporate
+23:04:41.274 [main] INFO  factory.BaseClass - selecting heath and wellness
+23:04:44.292 [main] INFO  factory.BaseClass - verifying with the valid inputs
+23:04:46.624 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+23:04:51.016 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+23:04:51.016 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
+23:04:53.248 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
+23:04:55.536 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
+23:04:57.758 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
+23:05:02.229 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+23:05:22.392 [main] INFO  factory.BaseClass - getting the success message
+23:05:22.393 [main] INFO  factory.BaseClass - verifying the success message
+09:00:51.309 [main] INFO  factory.BaseClass - running through chrome
+09:00:51.331 [main] INFO  factory.BaseClass - deleting all the cookies
+09:00:51.341 [main] INFO  factory.BaseClass - applying the implicit wait
+09:00:59.257 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+09:00:59.524 [main] INFO  factory.BaseClass - Entering the search data
+09:01:39.111 [main] INFO  factory.BaseClass - navigating to the doctors page
+09:01:39.333 [main] INFO  factory.BaseClass - applying the filters
+09:03:12.130 [main] INFO  factory.BaseClass - applied all the filters
+09:03:12.365 [main] INFO  factory.BaseClass - getting the doctors details
+09:03:13.306 [main] INFO  factory.BaseClass - printing the details in the excel
+09:03:20.819 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+09:03:21.023 [main] INFO  factory.BaseClass - navigating to the surgeries page
+09:03:29.638 [main] INFO  factory.BaseClass - scrolling down to the surgeries
+09:03:32.743 [main] INFO  factory.BaseClass - printing the surgeries list in the excel
+09:03:40.095 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage
+09:03:40.434 [main] INFO  factory.BaseClass - navigating to the corporate
+09:03:40.631 [main] INFO  factory.BaseClass - selecting heath and wellness
+09:04:06.114 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+09:04:08.514 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+09:04:12.895 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+09:04:12.895 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
+09:04:15.169 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 2
+09:04:17.464 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 3
+09:04:31.207 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+09:04:40.249 [main] INFO  factory.BaseClass - Navigated to PARCTO Homepage

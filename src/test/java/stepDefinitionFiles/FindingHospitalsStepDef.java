@@ -42,7 +42,6 @@ public class FindingHospitalsStepDef {
 		sa = new SoftAssert();
 		
 		TimeUnit.SECONDS.sleep(3);
-//		sa.assertTrue(homePOM.logo());m
 		Assert.assertTrue(homePOM.logo());
 		
 		logger.info("Navigated to PARCTO Homepage");

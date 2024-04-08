@@ -58,20 +58,25 @@ public class Hooks {
     }
 	
 	@AfterStep
-    public static void tearDown(Scenario scenario) throws IOException {
- 
-       if(!scenario.isFailed()) {
-    	   TakesScreenshot ts = (TakesScreenshot)driver;
-           byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
-           scenario.attach(fileContent, "image/png", scenario.getName());  
-       }
+//    public static void tearDown(Scenario scenario) throws IOException {
+	public static void tearDown(Scenario scenario) throws IOException {  
+	
+//       if(!scenario.isFailed()) {
+//    	   TakesScreenshot ts = (TakesScreenshot)driver;
+//           byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
+//           scenario.attach(fileContent, "image/png", scenario.getName());  
+//       }
+       
+       TakesScreenshot ts = (TakesScreenshot)driver;
+       byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
+       scenario.attach(fileContent, "image/png", scenario.getName());
          
     }
 	
 	@AfterAll
 	public static void afterAll() throws IOException {
 		driver.quit();
-		openExtentReport();
+//		openExtentReport();
 	}
 	
 }

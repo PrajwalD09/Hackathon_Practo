@@ -38,7 +38,7 @@ public class ExcelUtils {
 		r.createCell(2).setCellValue("Experience");
 		r.createCell(3).setCellValue("Practise Location");
 		r.createCell(4).setCellValue("Surgeries List");
-		r.createCell(5).setCellValue("Status");
+//		r.createCell(5).setCellValue("Status");
 		for(int i=0;i<surgeries.length;i++) {
 			XSSFRow r1 = sheet.createRow(i+1);
 			if(i<names.length) {

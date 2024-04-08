@@ -13,7 +13,6 @@ public class Doctors extends BasePage {
 		
 	public Doctors(WebDriver driver) {
 		super(driver);
-//		js = (JavascriptExecutor)driver;
 	}
 	
 	//-------------------------------------------------------------------------------------------

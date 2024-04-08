@@ -28,7 +28,7 @@ public class testListener implements ITestListener {
 	 }
 	
 	public void onTestStart(ITestResult result) {
-		logger.info("*********** "+result.getName()+ " Test started **********");
+		logger.info("*********** "+ result.getName() + " Test started **********");
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -36,7 +36,7 @@ public class testListener implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		logger.info(result.getName()+ " Test got failed");
+		logger.error(result.getName()+ " Test got failed");
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -44,7 +44,7 @@ public class testListener implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
-		logger.info("closing the browser");
+		logger.info("Closing the browser");
 	}
 
 }
