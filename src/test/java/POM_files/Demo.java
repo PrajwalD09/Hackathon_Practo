@@ -1,5 +1,6 @@
 package POM_files;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -188,10 +189,14 @@ public class Demo extends BasePage {
 	
 	public boolean scheduleADemoVisibility() throws InterruptedException {
 		Thread.sleep(5000);
+		//return scheduleADemoElement.isEnabled();
 		
 		//---------------- JS ---------------------
-		//return scheduleADemoElement.isEnabled();
-		return (boolean) js.executeScript("return arguments[0].isEnabled();", scheduleADemoElement);
+		WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		myWait.until(ExpectedConditions.visibilityOf(scheduleADemoElement));
+		
+		return scheduleADemoElement.isEnabled();
+//		return (boolean) js.executeScript("return arguments[0].isEnabled();", scheduleADemoElement);
 		//---------------- JS ---------------------
 	}
 	

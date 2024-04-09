@@ -166,8 +166,7 @@ public class TakingDemo {
 		logger.info("verifying the phone field by giving invalid input format");
 		
 		//---------------- JS ---------------------
-//		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
-		String invalidEntryColorRGB = "rgba(45, 45, 50, 1)";
+		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
 		//---------------- JS ---------------------
 		
 		logger.info("verifying the mail field with the valid input : ");
