@@ -138,7 +138,10 @@ public class TakingDemo {
 	{
 		logger.info("verifying the visibility of schedule a demo visibilty");
 		TimeUnit.SECONDS.sleep(4);
-		Assert.assertFalse(demoPOM.scheduleADemoVisibility());
+//		Assert.assertFalse(demoPOM.scheduleADemoVisibility());
+		
+		//---------------- JS ---------------------
+		Assert.assertEquals(demoPOM.scheduleADemoVisibility(), "rgba(180, 180, 190, 1)");
 		System.out.println("Button is disabled");
 		
 	}	
@@ -227,7 +230,10 @@ public class TakingDemo {
 		 
 		TimeUnit.SECONDS.sleep(2);
 		
-		Assert.assertTrue(demoPOM.scheduleADemoVisibility());
+//		Assert.assertTrue(demoPOM.scheduleADemoVisibility());
+		
+		//--------------------- JS ---------------------
+		Assert.assertNotEquals(demoPOM.scheduleADemoVisibility(),"rgba(180, 180, 190, 1)");
 		
 		demoPOM.scheduleADemoClick();
 		

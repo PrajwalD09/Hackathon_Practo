@@ -227,12 +227,10 @@ public class Doctors extends BasePage {
 		WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		myWait.until(ExpectedConditions.visibilityOf(surgeriesElement));
 		
-		if(surgeriesElement.isDisplayed()) {
-			TimeUnit.SECONDS.sleep(4);
-			js.executeScript("arguments[0].click()", surgeriesElement);
-			return true;
-		}
-		return false;
+		
+		TimeUnit.SECONDS.sleep(4);
+		js.executeScript("arguments[0].click()", surgeriesElement);
+		return true;
 		//---------------- JS ---------------------
 		
 	}
