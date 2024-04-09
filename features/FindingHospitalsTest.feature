@@ -19,7 +19,7 @@
 
 Feature: Finding hospitals
 
-	@smoke @regression
+	@smoke
   Scenario: Fetching doctors details
     Given navigate to practo
     And enter the search fields

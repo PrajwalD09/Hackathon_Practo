@@ -19,7 +19,7 @@
 
 Feature: Taking Demo
 
-@smoke @regression
+@regression
 Scenario: Verifying the schedule demo button
 		Given navigate to practo
     When clicked on for Corporates 
@@ -27,7 +27,7 @@ Scenario: Verifying the schedule demo button
     When filled in the invalid details in the form
     Then validate if schedule a demo button is disabled
 
-@smoke @regression
+@regression
 Scenario: Verifying the Thankyou message after applying for a demo 
 	  Given navigate to practo
 	  When clicked on for Corporates 

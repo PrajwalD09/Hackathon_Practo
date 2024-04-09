@@ -126,12 +126,15 @@ public class Doctors extends BasePage {
 	public void sort() throws InterruptedException {
 
 		sort.click();
+		
+		TimeUnit.SECONDS.sleep(1);
 		int limit = dropdown.size();
 		
 		int sortIndex = getRandomIndex(limit);
 		WebElement sort = dropdown.get(sortIndex);
 		sort.click();
 
+		TimeUnit.SECONDS.sleep(1);
 	}
 
 	@FindBy(xpath="//*[@class=\"u-xx-large-font u-bold\"]") WebElement docNums;

@@ -19,7 +19,7 @@
 
 Feature: Fetching Surgeries List
 
- @smoke @regression
+ @smoke
  Scenario: Fetching surgeries
  		Given navigate to practo
     When surgeries is clicked

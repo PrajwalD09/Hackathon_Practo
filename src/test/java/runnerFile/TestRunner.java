@@ -20,9 +20,9 @@ import io.cucumber.junit.CucumberOptions;
 			"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 	dryRun = false,
 	monochrome = true,
-	publish = true,
+	publish = true
 //	tags = ""
-	tags = "@smoke and @regression"
+//	tags = "@smoke and @regression"
 	)
 
 public class TestRunner {
