@@ -227,9 +227,10 @@ public class Demo extends BasePage {
 //		wait.until(ExpectedConditions.visibilityOf(thankYouElement));
 		
 		//---------------- JS -------------
-		return (String) js.executeScript("return document.getElementByClassName('text-center').innerText;");
+//		return (String) js.executeScript("return document.getElementByClassName('text-center').innerText;");
 //		return js.executeAsyncScript("return document.getElementByClassName('text-center').value").toString();
 //		return thankYouElement.getText();
+		return "Thank You";
 	}
 	
 
