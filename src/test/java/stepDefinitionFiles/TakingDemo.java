@@ -57,14 +57,15 @@ public class TakingDemo {
 	}
 	 
 	@When("filled in the invalid details in the form")
-	public void filled_in_the_invalid_details_in_the_form() throws IOException, InterruptedException {
-	    // Write code here that turns the phrase above into concrete actions
+	public void filled_in_the_invalid_details_in_the_form() throws IOException, InterruptedException 
+	{
 		logger.info("entering name and organisation in the demo form");
 		
 		js = (JavascriptExecutor)driver;
 		
 		demoPOM.name(ExcelUtils.getData(1,0));
 		
+		//Filling the form with invalid details
 		TimeUnit.SECONDS.sleep(2);
 		demoPOM.org(ExcelUtils.getData(1, 1));
 		logger.info("choosing the organization size and interested option");
@@ -106,7 +107,7 @@ public class TakingDemo {
 	 
 	@When("filled in the valid details in the form")
 	public void filled_in_the_valid_details_in_the_form() throws IOException, InterruptedException {
-	    // Write code here that turns the phrase above into concrete actions
+
 		logger.info("verifying with the valid inputs");
 		
 		js = (JavascriptExecutor)driver;
@@ -115,6 +116,7 @@ public class TakingDemo {
 		
 		TimeUnit.SECONDS.sleep(2);
 
+		//Filling the form with valid details
 		demoPOM.org(ExcelUtils.getData(1, 1));
 		logger.info("choosing the organization size and interested option");
 		

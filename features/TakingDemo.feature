@@ -19,13 +19,15 @@
 
 Feature: Taking Demo
 
+@smoke @regression
 Scenario: Verifying the schedule demo button
 		Given navigate to practo
     When clicked on for Corporates 
 		Then health and wellnes plans should be clicked
     When filled in the invalid details in the form
     Then validate if schedule a demo button is disabled
-    
+
+@smoke @regression
 Scenario: Verifying the Thankyou message after applying for a demo 
 	  Given navigate to practo
 	  When clicked on for Corporates 

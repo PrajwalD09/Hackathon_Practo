@@ -19,20 +19,10 @@
 
 Feature: Finding hospitals
 
+	@smoke @regression
   Scenario: Fetching doctors details
     Given navigate to practo
     And enter the search fields
     When apply all the filters
     Then get the details of first five doctors
     
-  #Scenario: Fetching surgeries
-    #And navigate to surgeries
-    #And get all the surgeries list
-    
-  #Scenario: Verifying the Thankyou message after applying for a demo 
-    #And navigate to form filling page
-    #And fill the invalid details
-    #Then validate if Schedule a demo button is not disabled 
-    #When fill the valid details
-    #Then validate if Schedule a demo button is disabled 
-    #And verify the Thankyou msg

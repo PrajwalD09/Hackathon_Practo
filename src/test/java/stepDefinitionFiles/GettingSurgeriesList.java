@@ -30,8 +30,8 @@ public class GettingSurgeriesList {
 	JavascriptExecutor js;
 	
 	@When("surgeries is clicked")
-	public void surgeries_is_clicked() throws InterruptedException {
-	    // Write code here that turns the phrase above into concrete actions
+	public void surgeries_is_clicked() throws InterruptedException 
+	{
 		driver = Hooks.getDriver();
 		logger = Hooks.getLogger();
 		doctorsPOM = new Doctors(driver);
@@ -40,8 +40,8 @@ public class GettingSurgeriesList {
 		boolean flag = doctorsPOM.surgeriesClick();
 		logger.info("Clicked on Surgeries");
 		Assert.assertTrue(flag);
+		
 //		js = (JavascriptExecutor)driver;
-//		
 //		doctorsPOM.surgeriesClick(js);
 //		Assert.assertTrue(true);
 	}
@@ -49,6 +49,7 @@ public class GettingSurgeriesList {
 	@Then("the surgeries list should be shown and list has to be retrieved")
 	public void the_surgeries_list_should_be_shown_and_list_has_to_be_retrieved() throws IOException, InterruptedException {
 
+		//Getting the Surgeries List
 		surgeriesPOM = new Surgeries(driver);
 		logger.info("scrolling down to the surgeries");
 		js = (JavascriptExecutor)driver;

@@ -1,0 +1,60 @@
+22:36:14.341 [main] INFO  factory.BaseClass - deleting all the cookies
+22:36:14.363 [main] INFO  factory.BaseClass - applying the implicit wait
+22:36:14.766 [main] INFO  factory.BaseClass - --------------- Verifying the schedule demo button has Started ---------------------
+22:36:21.587 [main] INFO  factory.BaseClass - Navigated to PRACTO Homepage
+22:36:21.997 [main] INFO  factory.BaseClass - navigating to the corporate
+22:36:22.211 [main] INFO  factory.BaseClass - selecting heath and wellness
+22:36:30.745 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+22:36:33.833 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+22:36:38.261 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+22:36:38.261 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
+22:36:40.509 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 2
+22:36:42.952 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 3
+22:36:55.274 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+22:36:59.764 [main] INFO  factory.BaseClass - --------------- Verifying the Thankyou message after applying for a demo has Started ---------------------
+22:37:04.440 [main] INFO  factory.BaseClass - Navigated to PRACTO Homepage
+22:37:04.779 [main] INFO  factory.BaseClass - navigating to the corporate
+22:37:04.991 [main] INFO  factory.BaseClass - selecting heath and wellness
+22:37:07.570 [main] INFO  factory.BaseClass - verifying with the valid inputs
+22:37:10.011 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+22:37:14.393 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+22:37:14.393 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
+22:37:16.682 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
+22:37:18.927 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
+22:37:21.247 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
+22:37:28.685 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+22:37:36.893 [main] INFO  factory.BaseClass - getting the success message
+22:37:37.277 [main] INFO  factory.BaseClass - verifying the success message
+22:38:05.901 [main] INFO  factory.BaseClass - Verified the Thank You message
+09:00:47.339 [main] INFO  factory.BaseClass - Running through chrome
+09:00:47.353 [main] INFO  factory.BaseClass - deleting all the cookies
+09:00:47.358 [main] INFO  factory.BaseClass - applying the implicit wait
+09:00:47.585 [main] INFO  factory.BaseClass - --------------- Verifying the schedule demo button has Started ---------------------
+09:00:53.666 [main] INFO  factory.BaseClass - Navigated to PRACTO Homepage
+09:00:53.915 [main] INFO  factory.BaseClass - navigating to the corporate
+09:00:54.078 [main] INFO  factory.BaseClass - selecting heath and wellness
+09:00:56.582 [main] INFO  factory.BaseClass - --------------- Verifying the Thankyou message after applying for a demo has Started ---------------------
+09:37:51.626 [main] INFO  factory.BaseClass - Running through chrome
+09:37:51.639 [main] INFO  factory.BaseClass - deleting all the cookies
+09:37:51.643 [main] INFO  factory.BaseClass - applying the implicit wait
+09:38:14.853 [main] INFO  factory.BaseClass - Running through chrome
+09:38:14.865 [main] INFO  factory.BaseClass - deleting all the cookies
+09:38:14.870 [main] INFO  factory.BaseClass - applying the implicit wait
+09:39:04.636 [main] INFO  factory.BaseClass - Running through chrome
+09:39:04.648 [main] INFO  factory.BaseClass - deleting all the cookies
+09:39:04.652 [main] INFO  factory.BaseClass - applying the implicit wait
+09:39:51.461 [main] INFO  factory.BaseClass - Running through chrome
+09:39:51.476 [main] INFO  factory.BaseClass - deleting all the cookies
+09:39:51.481 [main] INFO  factory.BaseClass - applying the implicit wait
+09:40:33.368 [main] INFO  factory.BaseClass - Running through chrome
+09:40:33.381 [main] INFO  factory.BaseClass - deleting all the cookies
+09:40:33.385 [main] INFO  factory.BaseClass - applying the implicit wait
+09:41:41.950 [main] INFO  factory.BaseClass - Running through chrome
+09:41:41.964 [main] INFO  factory.BaseClass - deleting all the cookies
+09:41:41.969 [main] INFO  factory.BaseClass - applying the implicit wait
+09:43:54.482 [main] INFO  factory.BaseClass - Running through chrome
+09:43:54.493 [main] INFO  factory.BaseClass - deleting all the cookies
+09:43:54.497 [main] INFO  factory.BaseClass - applying the implicit wait
+09:45:11.779 [main] INFO  factory.BaseClass - Running through chrome
+09:45:11.789 [main] INFO  factory.BaseClass - deleting all the cookies
+09:45:11.795 [main] INFO  factory.BaseClass - applying the implicit wait

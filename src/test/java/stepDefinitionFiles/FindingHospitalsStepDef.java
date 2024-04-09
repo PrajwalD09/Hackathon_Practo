@@ -35,10 +35,12 @@ public class FindingHospitalsStepDef {
 	@Given("navigate to practo")
 	public void navigate_to_practo() throws InterruptedException, IOException 
 	{
+		//Setting up the drivers
 		driver = Hooks.getDriver();
 		properties = Hooks.getProperties();
 		logger = Hooks.getLogger();
 		
+		//Navigating to Practo 
 		driver.get("https://www.practo.com/");
 		driver.manage().window().maximize();
 		BaseClass.screenShot("Navigated to Practo");
@@ -56,10 +58,12 @@ public class FindingHospitalsStepDef {
 	public void enter_the_search_fields() throws InterruptedException, IOException {
 		logger.info("Entering the search data");
 		
+		//Selecting City
 		boolean flag1 = homePOM.selectCity();
 		Assert.assertEquals(true, flag1);
 		logger.info("Entered the City name");
 
+		//Selcting Speciality
 		boolean flag2 = homePOM.selectSpeciality();
 		Assert.assertEquals(true, flag2);
 		logger.info("Entered the Speciality name");
@@ -70,6 +74,7 @@ public class FindingHospitalsStepDef {
 	@When("apply all the filters")
 	public void apply_all_the_filters() throws InterruptedException, IOException 
 	{
+		//Applying filters
 		logger.info("applying the filters");		
 		doctorsPOM = new Doctors(driver);
 		
@@ -90,6 +95,7 @@ public class FindingHospitalsStepDef {
 			TimeUnit.SECONDS.sleep(1);	
 			int noOfDoc = doctorsPOM.noOfDoc();
 			
+			//Check if doctors are greater than 5
 			if(noOfDoc >= 5) {
 				logger.info("Doctors are greater than 5");
 				break;
@@ -118,6 +124,7 @@ public class FindingHospitalsStepDef {
 			Assert.fail();
 		}
 		
+		//Storing the doctor details
 		String[] names = doctorsPOM.doctorsNames();
 		String[] fields = doctorsPOM.doctorsField();
 		String[] experience = doctorsPOM.doctorsExp(); 
