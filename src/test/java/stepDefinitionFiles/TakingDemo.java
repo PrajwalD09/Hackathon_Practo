@@ -258,6 +258,7 @@ public class TakingDemo {
 		BaseClass.screenShot("Success Message");
 		Assert.assertTrue(msg.equalsIgnoreCase("thank you"));
 		logger.info("Verified the Thank You message");
+		//------------------------ JS ---------------------------
 				
 	}
 	 
