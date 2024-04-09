@@ -34,3 +34,12 @@
 23:14:07.727 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
 23:14:29.819 [main] INFO  factory.BaseClass - getting the success message
 23:14:29.925 [main] INFO  factory.BaseClass - verifying the success message
+23:16:37.469 [main] INFO  factory.BaseClass - Running through chrome
+23:16:37.501 [main] INFO  factory.BaseClass - deleting all the cookies
+23:16:37.510 [main] INFO  factory.BaseClass - applying the implicit wait
+23:16:37.883 [main] INFO  factory.BaseClass - --------------- Verifying the schedule demo button has Started ---------------------
+23:16:43.624 [main] INFO  factory.BaseClass - Navigated to PRACTO Homepage
+23:16:43.877 [main] INFO  factory.BaseClass - navigating to the corporate
+23:16:43.969 [main] INFO  factory.BaseClass - selecting heath and wellness
+23:16:50.725 [main] INFO  factory.BaseClass - entering name and organisation in the demo form
+23:17:03.871 [main] INFO  factory.BaseClass - choosing the organization size and interested option
