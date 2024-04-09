@@ -224,8 +224,8 @@ public class Doctors extends BasePage {
 //		return false;
 		
 		//---------------- JS ---------------------
-		WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		myWait.until(ExpectedConditions.visibilityOf(surgeriesElement));
+//		WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		myWait.until(ExpectedConditions.visibilityOf(surgeriesElement));
 		
 		
 		TimeUnit.SECONDS.sleep(4);

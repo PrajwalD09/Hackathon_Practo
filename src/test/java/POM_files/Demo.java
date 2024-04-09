@@ -205,8 +205,8 @@ public class Demo extends BasePage {
 		Thread.sleep(5000);
 		
 		//---------------- JS ---------------------
-		WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		myWait.until(ExpectedConditions.visibilityOf(scheduleADemoElement));
+//		WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		myWait.until(ExpectedConditions.visibilityOf(scheduleADemoElement));
 		
 		return scheduleADemoElement.getCssValue("background-color");
 //		return (boolean) js.executeScript("return arguments[0].isEnabled();", scheduleADemoElement);
@@ -223,7 +223,9 @@ public class Demo extends BasePage {
 	
 	public String successMessage(WebDriverWait wait) throws InterruptedException {
 		Thread.sleep(5000);
-		wait.until(ExpectedConditions.visibilityOf(thankYouElement));
+//		wait.until(ExpectedConditions.visibilityOf(thankYouElement));
+		
+		//---------------- JS -------------
 		return thankYouElement.getText();
 	}
 	

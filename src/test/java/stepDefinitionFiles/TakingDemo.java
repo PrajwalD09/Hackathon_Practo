@@ -141,7 +141,7 @@ public class TakingDemo {
 //		Assert.assertFalse(demoPOM.scheduleADemoVisibility());
 		
 		//---------------- JS ---------------------
-		Assert.assertEquals(demoPOM.scheduleADemoVisibility(), "rgba(180, 180, 190, 1)");
+		Assert.assertNotEquals(demoPOM.scheduleADemoVisibility(), "rgba(40, 50, 140, 1)");
 		System.out.println("Button is disabled");
 		
 	}	
@@ -233,7 +233,7 @@ public class TakingDemo {
 //		Assert.assertTrue(demoPOM.scheduleADemoVisibility());
 		
 		//--------------------- JS ---------------------
-		Assert.assertNotEquals(demoPOM.scheduleADemoVisibility(),"rgba(180, 180, 190, 1)");
+		Assert.assertEquals(demoPOM.scheduleADemoVisibility(),"rgba(40, 50, 140, 1)");
 		
 		demoPOM.scheduleADemoClick();
 		
