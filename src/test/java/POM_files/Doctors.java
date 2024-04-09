@@ -1,6 +1,7 @@
 package POM_files;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -23,6 +24,7 @@ public class Doctors extends BasePage {
 	
 	public int getRandomIndex(int limit) throws InterruptedException 
 	{	
+		
 		if(noOfDoc() <= 100) {
 			limit = 1;
 		}
@@ -122,17 +124,19 @@ public class Doctors extends BasePage {
 	
 	
 	@FindBy(xpath="//*[text()=\"Relevance\"]") WebElement sort;
+	@FindBy(xpath = "//span[text()='Experience - High to Low']") WebElement sortElement;
 	
 	public void sort() throws InterruptedException {
 
 		sort.click();
 		
-		TimeUnit.SECONDS.sleep(1);
-		int limit = dropdown.size();
-		
-		int sortIndex = getRandomIndex(limit);
-		WebElement sort = dropdown.get(sortIndex);
-		sort.click();
+		TimeUnit.SECONDS.sleep(2);
+//		int limit = dropdown.size();
+//		
+//		int sortIndex = getRandomIndex(limit);
+//		WebElement sort = dropdown.get(sortIndex);
+//		sort.click();
+		sortElement.click();
 
 		TimeUnit.SECONDS.sleep(1);
 	}
@@ -142,11 +146,17 @@ public class Doctors extends BasePage {
 	public int noOfDoc() throws InterruptedException {
 
 		TimeUnit.SECONDS.sleep(2);
-		String doctorNumbersStr = docNums.getText();
+		try {
+			String doctorNumbersStr = docNums.getText();
 
-		int doctors = Integer.parseInt(doctorNumbersStr.substring(0,doctorNumbersStr.indexOf(' ')));
+			int doctors = Integer.parseInt(doctorNumbersStr.substring(0,doctorNumbersStr.indexOf(' ')));
 
-		return doctors;
+			return doctors;
+		}
+		catch(NoSuchElementException e) {
+			System.out.println("There are no doctors");
+		}
+		return 0;
 
 	}
 	

@@ -156,7 +156,6 @@ public class TakingDemo {
 		
 		demoPOM.scheduleADemoClick();
 		
-//		Thread.sleep(20000);
 		TimeUnit.SECONDS.sleep(10);
 		logger.info("getting the success message");
 	}
@@ -170,10 +169,7 @@ public class TakingDemo {
 		BaseClass.screenShot("Success Message");
 		Assert.assertTrue(msg.equalsIgnoreCase("thank you"));
 		logger.info("Verified the Thank You message");
-		
-//		sa = new SoftAssert();
-//		sa.assertAll();
-		
+				
 	}
 	 
 }

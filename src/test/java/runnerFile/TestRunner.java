@@ -10,7 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions( 
-	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features", 
+//	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features", 
+//	features = {"C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\FindingHospitals.feature"},
+	
+	features = {"C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\FindingHospitals.feature",
+	"C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\FindingSurgeriesList.feature",
+	"C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\TakingDemo.feature"},
+			
 //	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\TakingDemo.feature",
 //	features= {"@target/rerun.txt"},
 //	features = "C:\\Users\\2318520\\eclipse-workspace\\Hackathon_Practo\\features\\FindingSurgeriesList.feature",
