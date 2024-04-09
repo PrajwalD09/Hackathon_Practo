@@ -10,12 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Doctors extends BasePage {
-	
-	JavascriptExecutor js;
-	
+		
 	public Doctors(WebDriver driver) {
 		super(driver);
-		js = (JavascriptExecutor)driver;
 	}
 	
 	//-------------------------------------------------------------------------------------------
@@ -24,8 +21,12 @@ public class Doctors extends BasePage {
 	@FindBy(xpath="//*[@class=\"c-dropdown__list__item\" and @tabindex=\"0\"]") List<WebElement> dropdown;
 	@FindBy(xpath="//*[text()=\"Experience\"]") WebElement Experience;
 	
-	public int getRandomIndex(int limit) 
-	{
+	public int getRandomIndex(int limit) throws InterruptedException 
+	{	
+		if(noOfDoc() <= 100) {
+			limit = 1;
+		}
+		
 		Random r = new Random();
 		int randomIndex = r.nextInt(limit);
 		return randomIndex;
@@ -34,17 +35,20 @@ public class Doctors extends BasePage {
 
 	public void patientStoriesFilter() throws InterruptedException 
 	{
-		TimeUnit.SECONDS.sleep(2);
-
+		
 		if(pstories.isDisplayed()) 
 		{
 			pstories.click();	
-			TimeUnit.SECONDS.sleep(2);
+			TimeUnit.SECONDS.sleep(1);
 
 		}
 
 		int limit = dropdown.size();
 		int randomStoryIndex = getRandomIndex(limit);
+		
+		if(noOfDoc() <= 20) {
+			randomStoryIndex = 0;
+		}
 		WebElement stories = dropdown.get(randomStoryIndex);
 
 		stories.click();
@@ -53,11 +57,18 @@ public class Doctors extends BasePage {
  
 	public void expFilter() throws InterruptedException 
 	{
+//		TimeUnit.SECONDS.sleep(2);
+		
 		Experience.click();
-		TimeUnit.SECONDS.sleep(2);
+		
+		TimeUnit.SECONDS.sleep(1);
 
 		int limit = dropdown.size();
 		int randomExpIndex = getRandomIndex(limit);
+		
+		if(noOfDoc() <= 20) {
+			randomExpIndex = 1;
+		}
 
 		WebElement exp = dropdown.get(randomExpIndex);
 
@@ -70,18 +81,32 @@ public class Doctors extends BasePage {
 
 	public void allFilter() throws InterruptedException 
 	{
+//		TimeUnit.SECONDS.sleep(2);
+		
 		allfilters.click();
+		
+		TimeUnit.SECONDS.sleep(1);
 
 		int randomFeeIndex = getRandomIndex(3);
+		
+		if(noOfDoc() <= 50) {
+			randomFeeIndex = 1;
+		}
 	    WebElement fees = filtersList.get(randomFeeIndex);
 	    fees.click();
 
-	    TimeUnit.SECONDS.sleep(4);
+	    TimeUnit.SECONDS.sleep(2);
 
 	    allfilters.click();
 
 	    int randomIndexavailabilty = getRandomIndex(3)+4; 
+	    
+	    if(noOfDoc() <= 50) {
+	    	randomIndexavailabilty = 7;
+		}
 	    WebElement avail = filtersList.get(randomIndexavailabilty);
+	    
+	    TimeUnit.SECONDS.sleep(1);
 	    avail.click();
 
 	}
@@ -98,7 +123,7 @@ public class Doctors extends BasePage {
 	
 	@FindBy(xpath="//*[text()=\"Relevance\"]") WebElement sort;
 	
-	public void sort() {
+	public void sort() throws InterruptedException {
 
 		sort.click();
 		int limit = dropdown.size();
@@ -113,12 +138,10 @@ public class Doctors extends BasePage {
 
 	public int noOfDoc() throws InterruptedException {
 
-		TimeUnit.SECONDS.sleep(5);
+		TimeUnit.SECONDS.sleep(2);
 		String doctorNumbersStr = docNums.getText();
-		System.out.println(doctorNumbersStr);
 
 		int doctors = Integer.parseInt(doctorNumbersStr.substring(0,doctorNumbersStr.indexOf(' ')));
-		System.out.println(doctors);
 
 		return doctors;
 
@@ -129,11 +152,10 @@ public class Doctors extends BasePage {
 	public String[] doctorsNames() throws InterruptedException {
 		
 		String[] doctorNamesArr = new String[5];
-
+		
 		for(int i=0; i<doctorNamesArr.length; i++) 
 		{
 			String doctorName = doctorsNameList.get(i).getText();
-			System.out.println(doctorName);
 			doctorNamesArr[i] = doctorName;
 		}	
 		
@@ -178,70 +200,16 @@ public class Doctors extends BasePage {
 //	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
 	@FindBy(xpath = "//*[@id='root']/div/div/div[1]/div[1]/div[2]/div/div[2]/div[5]/a/div[1]") WebElement surgeriesElement;
 	
-	public void surgeriesClick() throws InterruptedException {
-//		if(surgeriesElement.isDisplayed()) {
-//			surgeriesElement.click();
-//			return true;
-//		}
-//		return false;
+	public boolean surgeriesClick( ) throws InterruptedException {
+		if(surgeriesElement.isDisplayed()) {
+			surgeriesElement.click();
+			return true;
+		}
+		return false;
 		
 //		TimeUnit.SECONDS.sleep(4);
-		Thread.sleep(4);
-//		surgeriesElement.click();
-		js.executeScript("arguments[0].click()", surgeriesElement);
+////		surgeriesElement.click();
+//		js.executeScript("arguments[0].click()", surgeriesElement);
 		
 	}
-	//------------------------------------------------------------------------------
-	
-//	@FindBy(xpath = "//span[text()='All Filters']") WebElement allFiltersDD;
-//	@FindBy(xpath = "//span[text()='Above ₹500']") WebElement priceElement;
-//	@FindBy(xpath = "(//span[text()='Available Today'])[1]") WebElement availabilityElement;
-//	
-//	public void allFilter() throws InterruptedException {
-//		allFiltersDD.click();
-//		priceElement.click();
-//		Thread.sleep(1000);
-//		allFiltersDD.click();
-//		availabilityElement.click();
-//	}
-	
-//	@FindBy(xpath = "//span[text()='Patient Stories']") WebElement patientStoriesDD;
-//	@FindBy(xpath = "//span[contains(text(),'10+ Patient')]") WebElement patientStoriesElement;
-//	
-//	public void patientStoriesFilter() {
-//		patientStoriesDD.click();
-//		patientStoriesElement.click();
-//	}
-//	
-//	@FindBy(xpath = "//span[text()='Experience']") WebElement expDD;
-//	@FindBy(xpath = "//span[contains(text(),'5+ Years')]") WebElement expElement;
-//	
-//	public void expFilter() {
-//		expDD.click();
-//		expElement.click();
-//	}
-//	
-//	@FindBy(xpath = "//span[text()='Relevance']") WebElement sortDD;
-//	@FindBy(xpath = "//span[text()='Experience - High to Low']") WebElement sortElement;
-//	
-//	public void sorting() {
-//		sortDD.click();
-//		sortElement.click();
-//	}
-//	
-//	@FindBy(className = "doctor-name") List<WebElement> doctorsNamesList;
-//	
-//	public String[] doctorsNames() {
-//		String[] names = new String[6];
-//		for(int i=0;i<6;i++) {
-//			names[i] = doctorsNamesList.get(i).getText();
-//		}
-//		return names;
-//	}
-//	
-		
-	
-	
-	
-	
 }

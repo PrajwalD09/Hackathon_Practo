@@ -11,9 +11,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import factory.BaseClass;
+import io.cucumber.core.gherkin.Step;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
 
 public class Hooks {
@@ -21,7 +24,6 @@ public class Hooks {
 	static WebDriver driver;
 	static Logger logger;
 	static Properties properties;
-    static int i = 1;
 	
 	@BeforeAll
 	public static void beforeAll() throws IOException {
@@ -29,6 +31,11 @@ public class Hooks {
 		driver = BaseClass.getDriver();
 		logger = BaseClass.getLogger1();
 		properties = BaseClass.getProperties();
+	}
+	
+	@Before
+	public void beforeStep(Scenario scenario) {
+		logger.info("--------------- " + scenario.getName() + " has Started ---------------------");
 	}
 	
 	public static WebDriver getDriver() {
@@ -45,7 +52,7 @@ public class Hooks {
 	
 	public static void openExtentReport() throws IOException {
         // Specify the path to your ExtentReports HTML file
-        String extentReportFilePath = System.getProperty("user.dir")+ "//test-output//SparkReport//Spark.html";
+        String extentReportFilePath = System.getProperty("user.dir")+ "//reports//CucumberReport.html";
  
             File reportFile = new File(extentReportFilePath);
             // Check if the file exists
@@ -58,14 +65,14 @@ public class Hooks {
     }
 	
 	@AfterStep
-    public static void tearDown(Scenario scenario) throws IOException {
- 
+	public static void tearDown(Scenario scenario) throws IOException {  
+	
        if(!scenario.isFailed()) {
     	   TakesScreenshot ts = (TakesScreenshot)driver;
            byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
-           scenario.attach(fileContent, "image/png", scenario.getName());  
+           scenario.attach(fileContent, "image/png", scenario.getName()); 
        }
-         
+                
     }
 	
 	@AfterAll
