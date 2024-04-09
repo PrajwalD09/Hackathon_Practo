@@ -213,16 +213,21 @@ public class Doctors extends BasePage {
 //	@FindBy(xpath = "//*[text()='Surgeries']") WebElement surgeriesElement;
 	@FindBy(xpath = "//*[@id='root']/div/div/div[1]/div[1]/div[2]/div/div[2]/div[5]/a/div[1]") WebElement surgeriesElement;
 	
-	public boolean surgeriesClick( ) throws InterruptedException {
+	public boolean surgeriesClick(JavascriptExecutor js) throws InterruptedException {
+//		if(surgeriesElement.isDisplayed()) {
+//			surgeriesElement.click();
+//			return true;
+//		}
+//		return false;
+		
+		//---------------- JS ---------------------
 		if(surgeriesElement.isDisplayed()) {
-			surgeriesElement.click();
+			TimeUnit.SECONDS.sleep(4);
+			js.executeScript("arguments[0].click()", surgeriesElement);
 			return true;
 		}
 		return false;
-		
-//		TimeUnit.SECONDS.sleep(4);
-////		surgeriesElement.click();
-//		js.executeScript("arguments[0].click()", surgeriesElement);
+		//---------------- JS ---------------------
 		
 	}
 }

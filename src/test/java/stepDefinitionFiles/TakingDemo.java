@@ -77,10 +77,12 @@ public class TakingDemo {
 		demoPOM.interestedInSelect();
 		logger.info("verifying the phone field by giving invalid input format");
 
-		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
-        
+		//---------------- JS ---------------------
+//		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
+		String invalidEntryColorRGB = "rgba(45, 45, 50, 1)";
+		//---------------- JS ---------------------
 		
-		logger.info("verifying the email field with the invalid input no : ");
+		logger.info("verifying the email field with the invalid input no : ");		
 			
 		Assert.assertEquals(demoPOM.phn(ExcelUtils.getData(1, 2)), invalidEntryColorRGB);
 		TimeUnit.SECONDS.sleep(2);
@@ -163,8 +165,10 @@ public class TakingDemo {
 		demoPOM.interestedInSelect();
 		logger.info("verifying the phone field by giving invalid input format");
 		
-		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
-		
+		//---------------- JS ---------------------
+//		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
+		String invalidEntryColorRGB = "rgba(45, 45, 50, 1)";
+		//---------------- JS ---------------------
 		
 		logger.info("verifying the mail field with the valid input : ");
 		

@@ -37,13 +37,15 @@ public class GettingSurgeriesList {
 		doctorsPOM = new Doctors(driver);
 		logger.info("Navigating to the surgeries page");
 		
-		boolean flag = doctorsPOM.surgeriesClick();
-		logger.info("Clicked on Surgeries");
+		//---------------- JS ---------------------
+		js = (JavascriptExecutor)driver;
+		boolean flag = doctorsPOM.surgeriesClick(js);
 		Assert.assertTrue(flag);
+		//---------------- JS ---------------------
 		
-//		js = (JavascriptExecutor)driver;
-//		doctorsPOM.surgeriesClick(js);
-//		Assert.assertTrue(true);
+//		boolean flag = doctorsPOM.surgeriesClick();
+//		logger.info("Clicked on Surgeries");
+//		Assert.assertTrue(flag);
 	}
 
 	@Then("the surgeries list should be shown and list has to be retrieved")

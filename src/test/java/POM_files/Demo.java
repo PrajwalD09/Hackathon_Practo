@@ -117,6 +117,7 @@ public class Demo extends BasePage {
 	
 	public String phn(String phn) throws InterruptedException {
 
+		//---------------- JS ---------------------
 		Thread.sleep(5000);
 		js.executeScript("arguments[0].setAttribute('value', '" + phn +"')", phnElement);
 //		js.executeScript("arguments[0].value = arguments[1];", phnElement, phn);
@@ -125,7 +126,7 @@ public class Demo extends BasePage {
 //		js.executeScript("arguments[0].dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter' }));", phnElement);
 		
 		return phnElement.getCssValue("color");
-		
+		//---------------- JS ---------------------
 		
 ////		js.executeScript("arguments[0].value = '';", phnElement);
 //		TimeUnit.SECONDS.sleep(3);
@@ -142,6 +143,7 @@ public class Demo extends BasePage {
 		
 	public String mail(String mail) throws InterruptedException {
 		
+		//---------------- JS ---------------------
 		Thread.sleep(5000);
 		js.executeScript("arguments[0].setAttribute('value', '" + mail +"')", mailElement);
 //		js.executeScript("arguments[0].value = arguments[1];", mailElement, mail);
@@ -149,6 +151,7 @@ public class Demo extends BasePage {
 //		js.executeScript("arguments[0].dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter' }));", mailElement);
 
 		return mailElement.getCssValue("color");
+		//---------------- JS ---------------------
 		
 //		--------------------------------------------------------------------------
 		
@@ -185,7 +188,11 @@ public class Demo extends BasePage {
 	
 	public boolean scheduleADemoVisibility() throws InterruptedException {
 		Thread.sleep(5000);
-		return scheduleADemoElement.isEnabled();
+		
+		//---------------- JS ---------------------
+		//return scheduleADemoElement.isEnabled();
+		return (boolean) js.executeScript("return arguments[0].isEnabled();", scheduleADemoElement);
+		//---------------- JS ---------------------
 	}
 	
 	
