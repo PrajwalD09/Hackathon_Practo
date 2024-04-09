@@ -229,6 +229,6 @@ public class Demo extends BasePage {
 		return thankYouElement.getText();
 	}
 	
-	
+
 }
 	
