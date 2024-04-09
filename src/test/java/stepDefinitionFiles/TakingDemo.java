@@ -79,20 +79,56 @@ public class TakingDemo {
 
 		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
         
-		for(int i=1; i<=3; i++) {
-			logger.info("verifying the email field with the invalid input no : " + i);
-			
-			Assert.assertEquals(demoPOM.phn(ExcelUtils.getData(i, 2)), invalidEntryColorRGB);
-			TimeUnit.SECONDS.sleep(2);
-		}
 		
-		for(int i=1; i<=4; i++) 
-		{
-			Assert.assertEquals(demoPOM.mail(ExcelUtils.getData(i, 4)), invalidEntryColorRGB);
-			TimeUnit.SECONDS.sleep(2);
-		}
+		logger.info("verifying the email field with the invalid input no : ");
+			
+		Assert.assertEquals(demoPOM.phn(ExcelUtils.getData(1, 2)), invalidEntryColorRGB);
+		TimeUnit.SECONDS.sleep(2);
+		
+		
+		Assert.assertEquals(demoPOM.mail(ExcelUtils.getData(1, 4)), invalidEntryColorRGB);
+		TimeUnit.SECONDS.sleep(2);
+		
 		
 		BaseClass.screenShot("Invalid Details");
+		
+		
+//		---------------------------------------------------------------
+		
+//		logger.info("entering name and organisation in the demo form");
+//		
+//		js = (JavascriptExecutor)driver;
+//		
+//		demoPOM.name(ExcelUtils.getData(1,0));
+//		
+//		//Filling the form with invalid details
+//		TimeUnit.SECONDS.sleep(2);
+//		demoPOM.org(ExcelUtils.getData(1, 1));
+//		logger.info("choosing the organization size and interested option");
+//		
+//		TimeUnit.SECONDS.sleep(2);
+//		demoPOM.orgSizeSelect();
+//		
+//		TimeUnit.SECONDS.sleep(2);
+//		demoPOM.interestedInSelect();
+//		logger.info("verifying the phone field by giving invalid input format");
+//
+//		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
+//        
+//		for(int i=1; i<=3; i++) {
+//			logger.info("verifying the email field with the invalid input no : " + i);
+//			
+//			Assert.assertEquals(demoPOM.phn(ExcelUtils.getData(i, 2)), invalidEntryColorRGB);
+//			TimeUnit.SECONDS.sleep(2);
+//		}
+//		
+//		for(int i=1; i<=4; i++) 
+//		{
+//			Assert.assertEquals(demoPOM.mail(ExcelUtils.getData(i, 4)), invalidEntryColorRGB);
+//			TimeUnit.SECONDS.sleep(2);
+//		}
+//		
+//		BaseClass.screenShot("Invalid Details");
 	}
 	
 	@Then("validate if schedule a demo button is disabled")
@@ -107,7 +143,7 @@ public class TakingDemo {
 	 
 	@When("filled in the valid details in the form")
 	public void filled_in_the_valid_details_in_the_form() throws IOException, InterruptedException {
-
+		
 		logger.info("verifying with the valid inputs");
 		
 		js = (JavascriptExecutor)driver;
@@ -129,18 +165,54 @@ public class TakingDemo {
 		
 		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
 		
-		for(int i=1; i<=4; i++) {
-			logger.info("verifying the mail field with the valid input : " + i);
-			
-			Assert.assertNotEquals(demoPOM.phn(ExcelUtils.getData(i, 3)), invalidEntryColorRGB);
-			TimeUnit.SECONDS.sleep(2);
-		}
+		
+		logger.info("verifying the mail field with the valid input : ");
+		
+		Assert.assertNotEquals(demoPOM.phn(ExcelUtils.getData(1, 3)), invalidEntryColorRGB);
+		TimeUnit.SECONDS.sleep(2);
+		
 		
 		TimeUnit.SECONDS.sleep(2);
 		Assert.assertNotEquals(demoPOM.mail(ExcelUtils.getData(1, 5)), invalidEntryColorRGB);
 		
 		TimeUnit.SECONDS.sleep(2);
 		BaseClass.screenShot("Valid Details");
+
+//		----------------------------------------------------------------
+		
+//		logger.info("verifying with the valid inputs");
+//		
+//		js = (JavascriptExecutor)driver;
+//				
+//		demoPOM.name(ExcelUtils.getData(1,0));
+//		
+//		TimeUnit.SECONDS.sleep(2);
+//
+//		//Filling the form with valid details
+//		demoPOM.org(ExcelUtils.getData(1, 1));
+//		logger.info("choosing the organization size and interested option");
+//		
+//		TimeUnit.SECONDS.sleep(2);
+//		demoPOM.orgSizeSelect();
+//		
+//		TimeUnit.SECONDS.sleep(2);
+//		demoPOM.interestedInSelect();
+//		logger.info("verifying the phone field by giving invalid input format");
+//		
+//		String invalidEntryColorRGB = "rgba(159, 58, 56, 1)";
+//		
+//		for(int i=1; i<=4; i++) {
+//			logger.info("verifying the mail field with the valid input : " + i);
+//			
+//			Assert.assertNotEquals(demoPOM.phn(ExcelUtils.getData(i, 3)), invalidEntryColorRGB);
+//			TimeUnit.SECONDS.sleep(2);
+//		}
+//		
+//		TimeUnit.SECONDS.sleep(2);
+//		Assert.assertNotEquals(demoPOM.mail(ExcelUtils.getData(1, 5)), invalidEntryColorRGB);
+//		
+//		TimeUnit.SECONDS.sleep(2);
+//		BaseClass.screenShot("Valid Details");
 	
 	}
 	
