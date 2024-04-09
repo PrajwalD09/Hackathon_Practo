@@ -221,7 +221,8 @@ public class Demo extends BasePage {
 	
 	@FindBy(xpath = "(//div[@class='text-center']/div)[1]") WebElement thankYouElement;
 	
-	public String successMessage(WebDriverWait wait) throws InterruptedException {
+//	public String successMessage(WebDriverWait wait) throws InterruptedException {
+	public String successMessage() throws InterruptedException {
 		Thread.sleep(5000);
 //		wait.until(ExpectedConditions.visibilityOf(thankYouElement));
 		

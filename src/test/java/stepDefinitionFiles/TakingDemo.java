@@ -243,9 +243,17 @@ public class TakingDemo {
 	
 	@Then("verify the Thankyou msg")
 	public void verify_the_thankyou_msg() throws InterruptedException, IOException {
+//		logger.info("verifying the success message");
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+//		String msg = demoPOM.successMessage(wait);
+//		
+//		BaseClass.screenShot("Success Message");
+//		Assert.assertTrue(msg.equalsIgnoreCase("thank you"));
+//		logger.info("Verified the Thank You message");
+		
+		//----------------------- JS ----------------------------
 		logger.info("verifying the success message");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		String msg = demoPOM.successMessage(wait);
+		String msg = demoPOM.successMessage();
 		
 		BaseClass.screenShot("Success Message");
 		Assert.assertTrue(msg.equalsIgnoreCase("thank you"));
