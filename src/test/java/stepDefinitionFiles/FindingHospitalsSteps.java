@@ -21,7 +21,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class FindingHospitalsSteps {
+public class FindingHospitalsSteps extends BaseClass {
 
 	WebDriver driver;
 	Properties properties;
@@ -39,7 +39,7 @@ public class FindingHospitalsSteps {
 		//Setting up the drivers
 		driver = Hooks.getDriver();
 		properties = Hooks.getProperties();
-		logger = Hooks.getLogger();
+		logger = BaseClass.getLogger1();
 		
 		//Navigating to Practo 
 		driver.get("https://www.practo.com/");

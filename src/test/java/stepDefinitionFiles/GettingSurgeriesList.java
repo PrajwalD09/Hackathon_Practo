@@ -19,7 +19,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class GettingSurgeriesList {
+public class GettingSurgeriesList extends BaseClass {
 	WebDriver driver;
 	Properties properties;
 	Logger logger;
@@ -33,19 +33,19 @@ public class GettingSurgeriesList {
 	public void surgeries_is_clicked() throws InterruptedException 
 	{
 		driver = Hooks.getDriver();
-		logger = Hooks.getLogger();
+		logger = BaseClass.getLogger1();
 		doctorsPOM = new Doctors(driver);
 		logger.info("Navigating to the surgeries page");
 		
 		//---------------- JS ---------------------
-		js = (JavascriptExecutor)driver;
-		boolean flag = doctorsPOM.surgeriesClick(js);
-		Assert.assertTrue(flag);
+//		js = (JavascriptExecutor)driver;
+//		boolean flag = doctorsPOM.surgeriesClick(js);
+//		Assert.assertTrue(flag);
 		//---------------- JS ---------------------
 		
-//		boolean flag = doctorsPOM.surgeriesClick();
-//		logger.info("Clicked on Surgeries");
-//		Assert.assertTrue(flag);
+		boolean flag = doctorsPOM.surgeriesClick();
+		logger.info("Clicked on Surgeries");
+		Assert.assertTrue(flag);
 	}
 
 	@Then("the surgeries list should be shown and list has to be retrieved")
