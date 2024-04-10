@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runnerFile.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 70.47 s <<< FAILURE! -- in runnerFile.TestRunner
-runnerFile.TestRunner.null on runnerFile.TestRunner -- Time elapsed: 70.18 s <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "factory.BaseClass.logger" is null
-	at factory.BaseClass.initilizeBrowser(BaseClass.java:75)
-	at stepDefinitionFiles.Hooks.beforeAll(Hooks.java:30)
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 300.5 s -- in runnerFile.TestRunner

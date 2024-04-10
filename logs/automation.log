@@ -1,23 +1,12 @@
-15:32:53.360 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-15:32:57.891 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-15:32:57.892 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 1
-15:33:00.369 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 2
-15:33:02.856 [main] INFO  factory.BaseClass - verifying the email field with the invalid input no : 3
-15:33:16.661 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
-15:33:50.890 [main] INFO  factory.BaseClass - Running through chrome
-15:33:50.916 [main] INFO  factory.BaseClass - deleting all the cookies
-15:33:50.925 [main] INFO  factory.BaseClass - applying the implicit wait
-15:34:02.242 [main] INFO  factory.BaseClass - Navigated to PRACTO Homepage
-15:34:02.760 [main] INFO  factory.BaseClass - navigating to the corporate
-15:34:03.094 [main] INFO  factory.BaseClass - selecting heath and wellness
-15:34:18.189 [main] INFO  factory.BaseClass - verifying with the valid inputs
-15:34:20.728 [main] INFO  factory.BaseClass - choosing the organization size and interested option
-15:34:25.197 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
-15:34:25.197 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
-15:34:27.550 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
-15:34:29.938 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
-15:34:32.259 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
-15:34:40.374 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
-15:34:52.543 [main] INFO  factory.BaseClass - getting the success message
-15:34:52.822 [main] INFO  factory.BaseClass - verifying the success message
-15:34:53.164 [main] INFO  factory.BaseClass - Verified the Thank You message
+16:20:09.850 [main] INFO  factory.BaseClass - selecting heath and wellness
+16:20:15.248 [main] INFO  factory.BaseClass - verifying with the valid inputs
+16:20:17.476 [main] INFO  factory.BaseClass - choosing the organization size and interested option
+16:20:21.785 [main] INFO  factory.BaseClass - verifying the phone field by giving invalid input format
+16:20:21.786 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 1
+16:20:23.984 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 2
+16:20:26.159 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 3
+16:20:28.336 [main] INFO  factory.BaseClass - verifying the mail field with the valid input : 4
+16:20:35.327 [main] INFO  factory.BaseClass - verifying the visibility of schedule a demo visibilty
+16:20:47.445 [main] INFO  factory.BaseClass - getting the success message
+16:20:47.570 [main] INFO  factory.BaseClass - verifying the success message
+16:20:47.755 [main] INFO  factory.BaseClass - Verified the Thank You message

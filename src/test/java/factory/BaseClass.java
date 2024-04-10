@@ -27,11 +27,14 @@ public class BaseClass {
 	public static WebDriver driver;
 	static Properties properties;
 	static Logger logger;
+	static String browser;
 	
 	public static WebDriver initilizeBrowser() throws IOException 
 	{
 		if (getProperties().getProperty("execution_env").equalsIgnoreCase("remote")) 
 		{
+			logger = getLogger1();
+			browser = properties.getProperty("browser");
 			System.out.println("executing remotely");
 			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -56,7 +59,7 @@ public class BaseClass {
 		else if (getProperties().getProperty("execution_env").equalsIgnoreCase("local")) 
 		{
 			logger = getLogger1();
-			String browser = properties.getProperty("browser");
+			browser = properties.getProperty("browser");
 			
 		    switch (browser.toLowerCase()) {
 			case "chrome":
