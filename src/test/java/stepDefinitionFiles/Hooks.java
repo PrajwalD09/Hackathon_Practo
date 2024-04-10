@@ -20,18 +20,19 @@ import io.cucumber.java.BeforeAll;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
 
-public class Hooks extends BaseClass {
-//	
-//	public static WebDriver driver;
-	Logger logger;
-	Properties properties;
+public class Hooks {
+
+	static WebDriver driver;
+	static Logger logger;
+	static Properties properties;
 	
 	@BeforeAll
-	public void beforeAll() throws IOException {
+	public static void beforeAll() throws IOException {
 		BaseClass.initilizeBrowser();
 		driver = BaseClass.getDriver();
-		logger = BaseClass.getLogger1();
+		logger = BaseClass.getLogger();
 		properties = BaseClass.getProperties();
+		
 	}
 	
 	@Before
@@ -42,14 +43,14 @@ public class Hooks extends BaseClass {
 	public static WebDriver getDriver() {
 		return driver;
 	}
-//	
-//	public static Properties getProperties() {
-//		return properties;
-//	}
-//	
-//	public static Logger getLogger() {
-//		return logger;
-//	}
+	
+	public static Properties getProperties() {
+		return properties;
+	}
+	
+	public static Logger getLogger() {
+		return logger;
+	}
 	
 	public static void openExtentReport() throws IOException {
         // Specify the path to your ExtentReports HTML file
@@ -84,6 +85,96 @@ public class Hooks extends BaseClass {
 	
 }
 
+//-------------------------
+
+//package stepDefinitionFiles;
+//
+//import java.awt.Desktop;
+//import java.io.File;
+//import java.io.IOException;
+//import java.util.Properties;
+//
+//import org.apache.logging.log4j.Logger;
+//import org.openqa.selenium.OutputType;
+//import org.openqa.selenium.TakesScreenshot;
+//import org.openqa.selenium.WebDriver;
+//
+//import factory.BaseClass;
+//import io.cucumber.core.gherkin.Step;
+//import io.cucumber.java.After;
+//import io.cucumber.java.AfterAll;
+//import io.cucumber.java.AfterStep;
+//import io.cucumber.java.Before;
+//import io.cucumber.java.BeforeAll;
+//import io.cucumber.java.BeforeStep;
+//import io.cucumber.java.Scenario;
+//
+//public class Hooks extends BaseClass {
+////	
+////	public static WebDriver driver;
+//	Logger logger;
+//	Properties properties;
+//	
+//	@Before
+//	public void beforeAll() throws IOException {
+//		BaseClass.initilizeBrowser();
+//		driver = BaseClass.getDriver();
+//		logger = BaseClass.getLogger();
+//		properties = BaseClass.getProperties();
+//		
+//	}
+//	
+//	@Before
+//	public void beforeStep(Scenario scenario) {
+//		logger.info("--------------- " + scenario.getName() + " has Started ---------------------");
+//	}
+//	
+//	public static WebDriver getDriver() {
+//		return driver;
+//	}
+////	
+////	public static Properties getProperties() {
+////		return properties;
+////	}
+////	
+////	public static Logger getLogger() {
+////		return logger;
+////	}
+//	
+//	public static void openExtentReport() throws IOException {
+//        // Specify the path to your ExtentReports HTML file
+//        String extentReportFilePath = System.getProperty("user.dir")+ "//reports//CucumberReport.html";
+// 
+//            File reportFile = new File(extentReportFilePath);
+//            // Check if the file exists
+//            if (reportFile.exists()) {
+//                // Open the file in the default web browser
+//                Desktop.getDesktop().browse(reportFile.toURI());
+//            } else {
+//                System.out.println("ExtentReports file not found at: " + extentReportFilePath);
+//            }
+//    }
+//	
+//	@AfterStep
+//	public static void tearDown(Scenario scenario) throws IOException {  
+//	
+//       if(!scenario.isFailed()) {
+//    	   TakesScreenshot ts = (TakesScreenshot)driver;
+//           byte[] fileContent = ts.getScreenshotAs(OutputType.BYTES);
+//           scenario.attach(fileContent, "image/png", scenario.getName()); 
+//       }
+//                
+//    }
+//	
+//	@After
+//	public static void afterAll() throws IOException {
+//		driver.quit();
+////		openExtentReport();
+//	}
+//	
+//}
+
+//------------------------------------------------------------------------------------------------------
 
 //package stepDefinitionFiles;
 //
@@ -116,7 +207,7 @@ public class Hooks extends BaseClass {
 //	public static void beforeAll() throws IOException {
 //		BaseClass.initilizeBrowser();
 //		driver = BaseClass.getDriver();
-//		logger = BaseClass.getLogger1();
+//		logger = BaseClass.getLogger();
 //		properties = BaseClass.getProperties();
 //	}
 //	

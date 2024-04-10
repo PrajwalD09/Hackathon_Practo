@@ -33,7 +33,7 @@ public class GettingSurgeriesList extends BaseClass {
 	public void surgeries_is_clicked() throws InterruptedException 
 	{
 		driver = Hooks.getDriver();
-		logger = BaseClass.getLogger1();
+		logger = Hooks.getLogger();
 		doctorsPOM = new Doctors(driver);
 		logger.info("Navigating to the surgeries page");
 		

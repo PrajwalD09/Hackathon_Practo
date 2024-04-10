@@ -41,7 +41,7 @@ public class TakingDemo extends BaseClass{
 		js = (JavascriptExecutor)driver;
 		surgeriesPOM = new Surgeries(driver);
 		demoPOM = new Demo(driver);
-		logger = BaseClass.getLogger1();
+		logger = Hooks.getLogger();
 		surgeriesPOM.scrollTop(js);
 		surgeriesPOM.corporate();
 		logger.info("navigating to the corporate");

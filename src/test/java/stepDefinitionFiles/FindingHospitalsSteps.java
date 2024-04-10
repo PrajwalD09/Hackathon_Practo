@@ -39,7 +39,7 @@ public class FindingHospitalsSteps extends BaseClass {
 		//Setting up the drivers
 		driver = Hooks.getDriver();
 		properties = Hooks.getProperties();
-		logger = BaseClass.getLogger1();
+		logger = Hooks.getLogger();
 		
 		//Navigating to Practo 
 		driver.get("https://www.practo.com/");
