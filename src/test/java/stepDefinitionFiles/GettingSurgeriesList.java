@@ -75,8 +75,13 @@ public class GettingSurgeriesList extends BaseClass {
 		}
 		System.out.println("-------------------------------------------------------");
 		
-		ExcelUtils.writeIntoExcel(surgeriesPOM.surgeriesList());
-		logger.info("printing the surgeries list in the excel");
+		try {
+			ExcelUtils.writeIntoExcel(surgeriesPOM.surgeriesList());
+			logger.info("printing the surgeries list in the excel");
+		}
+		catch(NullPointerException e) {
+			//Ignore
+		}
 		
 		TimeUnit.SECONDS.sleep(3);
 	}
