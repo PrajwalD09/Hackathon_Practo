@@ -79,11 +79,63 @@ public class Hooks {
 	
 	@AfterAll
 	public static void afterAll() throws IOException {
-		driver.quit();
+		BaseClass.getDriver().quit();
 		openExtentReport();
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //-------------------------
 
