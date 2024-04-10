@@ -26,7 +26,7 @@ public class Hooks extends BaseClass {
 	Logger logger;
 	Properties properties;
 	
-	@Before
+	@BeforeAll
 	public void beforeAll() throws IOException {
 		BaseClass.initilizeBrowser();
 		driver = BaseClass.getDriver();
@@ -34,10 +34,10 @@ public class Hooks extends BaseClass {
 		properties = BaseClass.getProperties();
 	}
 	
-//	@Before
-//	public void beforeStep(Scenario scenario) {
-//		logger.info("--------------- " + scenario.getName() + " has Started ---------------------");
-//	}
+	@Before
+	public void beforeStep(Scenario scenario) {
+		logger.info("--------------- " + scenario.getName() + " has Started ---------------------");
+	}
 	
 	public static WebDriver getDriver() {
 		return driver;
@@ -76,7 +76,7 @@ public class Hooks extends BaseClass {
                 
     }
 	
-	@After
+	@AfterAll
 	public static void afterAll() throws IOException {
 		driver.quit();
 		openExtentReport();
