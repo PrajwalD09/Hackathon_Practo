@@ -21,7 +21,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class FindingHospitalsSteps extends BaseClass {
+public class FindingHospitalsSteps {
 
 	WebDriver driver;
 	Properties properties;
@@ -47,7 +47,7 @@ public class FindingHospitalsSteps extends BaseClass {
 		BaseClass.screenShot("Navigated to Practo");
 		homePOM = new HomePage(driver);
 		doctorsPOM = new Doctors(driver);
-		sa = new SoftAssert();
+//		sa = new SoftAssert();
 		
 		TimeUnit.SECONDS.sleep(3);
 		Assert.assertTrue(homePOM.logo());

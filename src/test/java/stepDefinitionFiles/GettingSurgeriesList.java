@@ -19,7 +19,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class GettingSurgeriesList extends BaseClass {
+public class GettingSurgeriesList {
 	WebDriver driver;
 	Properties properties;
 	Logger logger;

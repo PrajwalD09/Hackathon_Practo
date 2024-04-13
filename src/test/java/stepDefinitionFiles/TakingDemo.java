@@ -22,7 +22,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TakingDemo extends BaseClass{
+public class TakingDemo{
 	
 	WebDriver driver;
 	Properties properties;
@@ -229,7 +229,7 @@ public class TakingDemo extends BaseClass{
 		 
 		TimeUnit.SECONDS.sleep(2);
 		
-//		Assert.assertTrue(demoPOM.scheduleADemoVisibility());
+		Assert.assertTrue(demoPOM.scheduleADemoVisibility());
 		
 		//--------------------- JS ---------------------
 //		Assert.assertNotEquals(demoPOM.scheduleADemoVisibility(),"rgba(40, 50, 140, 1)");
