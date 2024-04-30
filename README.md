@@ -39,10 +39,3 @@ Practo.com Testing with Cucumber is a comprehensive test suite that covers vario
 - Maven or Gradle for managing dependencies (optional but recommended).
 - Cucumber framework and any required Cucumber plugins or libraries.
 
-## Contributing
-
-Contributions are welcome! If you find issues or want to enhance the test suite, please submit a pull request or open an issue on GitHub.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
